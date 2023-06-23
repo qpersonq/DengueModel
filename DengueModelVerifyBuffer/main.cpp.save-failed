@@ -1,0 +1,546 @@
+#define _USE_MATH_DEFINES
+#include<iostream>
+#include<ctime>
+#include<fstream>
+#include<string>
+#include<sstream>
+#include<vector>
+#include<algorithm>
+#include<utility>
+#include<iterator>
+#include<thread>
+#include<tuple>
+#include<iomanip>
+#include<set>
+#include<cmath>
+
+#include"InterfaceSimplicity.hpp"
+#include"DengueMegaDataController.hpp"
+#include"SpatialTimeProcessor.hpp"
+#include"NeuronTree.hpp"
+#include"MCMCDengueTree.hpp"
+#include"DBSCANDengueTree.hpp"
+
+#include"MatrixValueTool.hpp"
+#include"standardlizeTool.hpp"
+#include"SelfOrganizingMap.hpp"
+#include"HistogramMap.hpp"
+#include"FullConnectedDengueTree.hpp"
+#include"PredictionBuffer.hpp"
+
+#include"DynamicFullConnectedDengueTree.hpp"
+#include <boost/asio/thread_pool.hpp>
+#include <boost/asio/post.hpp>
+using namespace std;
+using namespace spatialtime;
+
+template<class T> vector<T> splitString(const string& spc){
+vector<T>rt;
+T tmpvl;
+string tmpstr=spc;
+replace(tmpstr.begin(),tmpstr.end(),',',' ');
+stringstream wssbuff;
+wssbuff<<tmpstr;
+
+while(wssbuff>>tmpvl){
+    rt.push_back(tmpvl);
+}
+return rt;
+}
+
+int main()
+{
+clock_t START_TIME,POLLING_START_TIME,POLLING_END_TIME,END_TIME;START_TIME=clock();
+   ModelInformation  ModelInf("DengueDiffusionModel.ini");
+    cout<<"*** Dengue Transmission Chain Verify ***"<<endl;
+    for(auto k:ModelInf.Dengue_ini){
+        cout<< k.first<<" "<<k.second<<endl;
+    }
+
+    cout<<"** Read Dengue Information saver file **"<<endl;
+    ifstream DengueInformationSaverReader(ModelInf.SelfOrganizingMapFile+".sav");
+    if(!DengueInformationSaverReader.is_open()){cerr<<"DengueInformationSaverReader err"<<endl;return -1;}
+    vector<string> inputTitles;
+        {
+            string eatTitleTemp;
+            getline(DengueInformationSaverReader,eatTitleTemp);
+            inputTitles=splitString<string>(eatTitleTemp);
+        }
+    cout<<"Titles: ";
+    for(auto k:inputTitles)cout<<k<<",";cout<<endl;
+
+
+
+//self organize map start
+cout<<" ** Load Self Organizing Map ** "<<endl;
+    SelfOrganizingMap *som=new SelfOrganizingMap(ModelInf.SigmaNeighbouringInitial ,ModelInf.SigmaNeighbourhoodFinal ,ModelInf.LearningRateInitial ,ModelInf.LearningRateFinal );
+    /*
+    ifstream SelfOMapFileRead(ModelInf.SelfOrganizingMapFile);
+    if(SelfOMapFileRead.is_open()){
+        cout<<"Load file : "<<ModelInf.SelfOrganizingMapFile<<endl;
+         som=new SelfOrganizingMap(ModelInf.SigmaNeighbouringInitial ,ModelInf.SigmaNeighbourhoodFinal ,ModelInf.LearningRateInitial ,ModelInf.LearningRateFinal );
+    */
+        som->load(DengueInformationSaverReader);
+    /*SelfOMapFileRead.close();
+    }
+    else{
+        cerr<<"err loding"<<endl;
+        return -1;
+    }*/
+
+//Load std inf
+cout<<" ** Load Standard Information ** "<<endl;
+vector<standardlizeInformation>  currentStdInfVec;
+for(int g=0;g<som->getInputVectorSize();g++){
+    standardlizeInformation stdinf;
+    stdinf.load(DengueInformationSaverReader);
+    currentStdInfVec.push_back(stdinf);
+}
+
+
+
+
+
+cout<<" ** Load Full Histogram Information ** "<<endl;
+//new Histogram
+HistorgramMap FullHistogram_Distance,FullHistogram_Lag;
+FullHistogram_Distance.load(DengueInformationSaverReader);
+FullHistogram_Lag.load(DengueInformationSaverReader);
+
+cout<<" ** Load Active Neuron Recode ** "<<endl;
+set<pair<int,int>>ActiveNeuronRecoder;
+        {
+            vector<int>tmpacnn;
+            string eatactnnln;
+            getline(DengueInformationSaverReader,eatactnnln);
+            tmpacnn=splitString<int>(eatactnnln);
+            for(int u:tmpacnn){
+                ActiveNeuronRecoder.insert({u/som->getYSize(),u%som->getYSize()});
+            }
+
+        }
+
+cout<<" ** Load SOM Histogram  ** "<<endl;
+       HistorgramMap  **LagHistgMp  , **DistHistgMp;
+       LagHistgMp=new HistorgramMap*[som->getXSize()];
+       DistHistgMp=new HistorgramMap*[som->getXSize()];
+       for(int i=0;i<som->getXSize();i++){
+        LagHistgMp[i]=new HistorgramMap[som->getYSize()];
+        DistHistgMp[i]=new HistorgramMap[som->getYSize()];
+       }
+       for(int i=0;i<som->getXSize();i++){
+        for(int j=0;j<som->getYSize();j++){
+            DistHistgMp[i][j].load(DengueInformationSaverReader);
+            LagHistgMp[i][j].load(DengueInformationSaverReader);
+        }
+       }
+
+DengueInformationSaverReader.close();
+/* ---------------------------------------start prediction----------------------------------------------------*/
+cout<<"**** Start Prediction ****"<<endl;
+
+
+DengueMegaDataControl* PredictionDengueMegaCtrl=new DengueMegaDataControl(ModelInf.DengueFactorhcsvName,true);
+//cout<<ModelInf.PredictionBoundDengueID.size()<<endl;
+//for(auto g:ModelInf.PredictionBoundDengueID)cout<<g<<",";cout<<endl;
+for(int k=0;k<ModelInf.PredictionBoundDengueID.size();k+=2){
+         PredictionDengueMegaCtrl->loading_(ModelInf.PredictionBoundDengueID[k],ModelInf.PredictionBoundDengueID[k+1]);
+
+}
+
+//cout<<denguemegactrl->getPool().size()<<endl;
+                vector<double>initRootProp__;initRootProp__.resize(ModelInf.LowerNetworkFactorNumber,0.0);
+FullConnectedDengueTree* PredictionFullTree=new DynamicFullConnectedDengueTree(ModelInf.LowerNetworkFactorNumber,initRootProp__);
+
+FactorController* PredictionfactorCtrl=nullptr;
+if(ModelInf.FactorControllerEnable)  PredictionfactorCtrl=new FactorController(*PredictionDengueMegaCtrl,ModelInf.WeatherTitleDayAggregate,ModelInf.EnviromentalUnit);
+processTreeImportBatchInterface(  PredictionDengueMegaCtrl,PredictionFullTree  ,ModelInf.LowerNetworkFactorNumber);
+
+
+SOMInputController *EditSomControl=new SOMInputController;
+EditSomControl->SOMAttributeTitle={"PositionX","PositionY","DirectionX","DirectionY","Distant","Lag"};
+EditSomControl->SOMAttributeTitle.insert(EditSomControl->SOMAttributeTitle.end(),PredictionfactorCtrl->FactorTitle.begin(),PredictionfactorCtrl->FactorTitle.end());
+EditSomControl->OriginalSOMInputMatrix.resize(PredictionDengueMegaCtrl->rowsize());
+//cout<<"key rsz:"<<PredictionDengueMegaCtrl->rowsize()<<endl;;
+for(int k=0;k<(PredictionDengueMegaCtrl->rowsize());k++){
+    vector<double> tmpprevec={PredictionDengueMegaCtrl->getRealData(k,PredictionDengueMegaCtrl->getCowIndex("TW97X")),PredictionDengueMegaCtrl->getRealData(k,PredictionDengueMegaCtrl->getCowIndex("TW97Y")),
+                                0,0,
+                                0,0
+                             };
+        vector<double> envfvec= PredictionfactorCtrl->FactorTable[PredictionDengueMegaCtrl->getRealData(k,PredictionDengueMegaCtrl->getCowIndex("DengueFid"))];
+    tmpprevec.insert(tmpprevec.end(),envfvec.begin(),envfvec.end());
+    EditSomControl->OriginalSOMInputMatrix[k]=tmpprevec;
+}
+/*
+ofstream dbg("debg.csv");
+writeMatrix(EditSomControl->OriginalSOMInputMatrix,dbg);
+dbg.close();
+*/
+EditSomControl->StandardLizeSOMInputMatrix=EditSomControl->OriginalSOMInputMatrix;
+EditSomControl->keepBatch(inputTitles);
+        //check is equal
+        if(EditSomControl->size()!= currentStdInfVec.size()){
+            cerr<<"error sz EditSomControl : currentStdInfVec"<<endl;
+            return -1;
+
+        }
+        bool erroutflg=false;
+        for(int z=0;z<EditSomControl->size();z++){
+            if(EditSomControl->SOMAttributeTitle[z]!= inputTitles[z]){
+                cerr<<"z:"<<z<<",SOMAttributeTitle : inputTitles :: "<<EditSomControl->SOMAttributeTitle[z]<<" : "<<inputTitles[z]<<endl;
+                erroutflg=true;
+            }
+        }
+        if(erroutflg){
+                return -1;
+
+        }
+EditSomControl->StandardlizeInformationRecoder=currentStdInfVec;
+EditSomControl->BatchStandardlize();
+/*
+ofstream dbg("debg.csv");
+for(auto g:EditSomControl->SOMAttributeTitle)dbg<<g<<",";dbg<<endl;
+writeMatrix(EditSomControl->OriginalSOMInputMatrix,dbg);
+writeMatrix(EditSomControl->StandardLizeSOMInputMatrix,dbg);
+dbg.close();
+*/
+delete PredictionfactorCtrl;
+
+
+cout<<"** Start Polling! **"<<endl;
+        POLLING_START_TIME=clock();
+boost::asio::thread_pool PoolingTHPL(ModelInf.CPUProcessorNum);
+//Polling Model
+HistorgramMap *PollingMapLag,*PollingMapDistance;
+int crszfornew=EditSomControl->StandardLizeSOMInputMatrix.size();
+    PollingMapLag=new HistorgramMap[crszfornew];
+    PollingMapDistance=new HistorgramMap[crszfornew];
+//double pl_lg_sup=50,pl_lg_inf=6,pl_dist_sup=1000;
+    for(int u=0;u<EditSomControl->StandardLizeSOMInputMatrix.size();u++){
+        int Curr_Fid_=PredictionFullTree->getDengueCase(u).getFid();
+
+
+
+
+            boost::asio::post(PoolingTHPL,[=](){
+                               vector<double>player  = EditSomControl->StandardLizeSOMInputMatrix[u];
+                               HistorgramMap his_lg(FullHistogram_Lag.getInfIntervelSet()),his_ds(FullHistogram_Distance.getInfIntervelSet());
+                               if(ModelInf.PollingFlag){
+
+                                //Polling
+                                //for(double gp=7;gp<pl_lg_sup;gp+=15){
+                                    //for(double gds=10;gds<pl_dist_sup;gds+=300){
+                                    vector<HistorgramMap> hislgtmp,hisdisttmp;
+                                    for(set<pair<int,int>>::iterator ac=ActiveNeuronRecoder.begin();ac!=ActiveNeuronRecoder.end();++ac){
+                                            //vector<double>player  =  {0,0,som->getWeight(ac->first,ac->second)[2],som->getWeight(ac->first,ac->second)[3]};
+                                            int dist_idx=EditSomControl->findElementIndexbyTitle("Distant");
+                                            int lag_idx=EditSomControl->findElementIndexbyTitle("Lag");
+                                            player[dist_idx]=som->getWeight(ac->first,ac->second)[dist_idx];
+                                            player[lag_idx]=som->getWeight(ac->first,ac->second)[lag_idx];
+
+
+                                            pair<int,int> bspos=FindActiveBestMatchUnit(*som,ActiveNeuronRecoder,player);
+
+                                            hislgtmp.push_back(LagHistgMp[bspos.first][bspos.second]);
+                                            hisdisttmp.push_back(DistHistgMp[bspos.first][bspos.second]);
+                                            //his_lg=PDFPlus(his_lg,(LagHistgMp[bspos.first][bspos.second]));
+                                            //his_ds=PDFPlus(his_ds,(DistHistgMp[bspos.first][bspos.second]));
+                                    }
+                                       // }
+                                //}//end polling
+                                    his_lg=PDFPlusBatch(hislgtmp);
+                                    his_ds=PDFPlusBatch(hisdisttmp);
+
+                                }
+                                else{
+                                    pair<int,int> bspos=FindActiveBestMatchUnit(*som,ActiveNeuronRecoder,player,{EditSomControl->findElementIndexbyTitle("Distant"),EditSomControl->findElementIndexbyTitle("Lag")});
+                                    his_lg=LagHistgMp[bspos.first][bspos.second];
+                                    his_ds=DistHistgMp[bspos.first][bspos.second];
+                                }
+
+                            PollingMapLag[u]=(his_lg);
+                            PollingMapDistance[u]=(his_ds);
+                            });
+        }
+
+PoolingTHPL.join();
+
+
+    POLLING_END_TIME=clock();
+
+
+cout<<"** Polling done! **"<<endl;
+
+
+{
+//Parameter
+  double LagSup_=ModelInf.LowerNetworkLagSup,LagInf_=ModelInf.LowerNetworkLagInf,DistanceSup_=ModelInf.LowerNetworkDistanceSup;
+  double Percentage_lowerbound=0.04;
+  int Percentage_init_int=15,Percentage_end=100,Percentage_add_int=5;
+
+//INIT writer
+        vector<ofstream> PWriter;PWriter.resize(3);string PwNMM[]={ModelInf.PredictionResultFile +"SpatialTimePerc.csv",ModelInf.PredictionResultFile +"HistogramPerc.csv",ModelInf.PredictionResultFile +"SOMPerc.csv"};
+
+           if(ModelInf.SpatialTimePercFlag){PWriter[0].open(PwNMM[0]);PWriter[0]<<" Percentage, ConnectedPair, Lag_lb, Lag_ub, Distance, Count, Entropy, R2PI "<<endl;}
+           if(ModelInf.HistogramPercFlag){  PWriter[1].open(PwNMM[1]);PWriter[1]<<" Percentage, ConnectedPair, Lag_lb, Lag_ub, Distance, Count, Entropy, R2PI "<<endl;}
+           if(ModelInf.SOMPercFlag){        PWriter[2].open(PwNMM[2]);PWriter[2]<<" Percentage, ConnectedPair, Lag_lb, Lag_ub, Distance, Count, Entropy, R2PI "<<endl;}
+
+        /*PWriter[w].open(PwNMM[w]);
+            if(w==2)
+            else    PWriter[w]<<" Percentage, ConnectedPair, Lag_lb, Lag_ub, Distance, Count, Entropy, R2PI "<<endl;
+
+        */
+
+    //fullconnect
+    if(ModelInf.SpatialTimePercFlag){
+        cout<<"**Percentage Spatial and Time**"<<endl;
+        cout<<" Percentage, ConnectedPair, Lag_lb, Lag_ub, Distance, Count, Entropy, R2PI "<<endl;
+        ofstream SPPropWr("SpatialTimePredictionProp.csv");
+           SPPropWr <<" Percentage, Fid, ConnectedPairNUM, PairFid, CoorX, CoorY, LgInf, LgSup, Distance"<<endl;
+        for(int p_int=Percentage_init_int;p_int<=Percentage_end;p_int+=Percentage_add_int){
+             double Percentage=((double)p_int/(double)100.0);
+            //calculate full connected tree
+
+
+            PredictionFullTree->clearConnection();
+            PredictionFullTree->setParameter(LagInf_,LagInf_+((LagSup_-LagInf_)*Percentage) ,(DistanceSup_*Percentage));
+            PredictionFullTree->Connect();
+                        //sp prop writer
+                        for(int u=1;u<PredictionFullTree->getDengueCaseSize();u++){
+                            Coordinate tw97pos= PredictionFullTree->getDengueCase(u).getCoordinate();
+
+                            SPPropWr<<std::scientific<<Percentage<<","<<PredictionFullTree->getDengueCase(u).getFid()<<","
+                                    <<PredictionFullTree->getDengueCase(u).forwardingCase.size()<<",";
+                            for(int vlfid:PredictionFullTree->getDengueCase(u).forwardingCase)SPPropWr<<vlfid<<";";
+                            SPPropWr<<",";
+                            SPPropWr<<std::scientific<<tw97pos.X<<","<<tw97pos.Y<<",";
+                            SPPropWr<<LagInf_<<","<<(LagInf_+((LagSup_-LagInf_)*Percentage))<<","<<(DistanceSup_*Percentage)<<",";
+
+                            SPPropWr<<endl;
+                        }
+
+
+
+
+
+
+            //cout<<"Connected Pair:"<< PredictionFullTree->getAllPair().size()<<endl;
+                    //calculate coverage
+                    set<int>IDCounter;
+                    for(int i=1;i<PredictionFullTree->getDengueCaseSize();i++){
+                        for(int gfid:PredictionFullTree->getDengueCase(i).forwardingCase){
+                        IDCounter.insert(gfid);
+                        }
+                    }
+              vector<double>  wrprp =
+                    {
+                      Percentage,
+                      (double)PredictionFullTree->getAllPair().size(),
+                      LagInf_,
+                      ((double)LagInf_+((LagSup_-LagInf_)*Percentage)+1),
+                      ((double)(DistanceSup_*Percentage)+1),
+                      ((double)IDCounter.size()),
+                      ((double)IDCounter.size()/ ((double)((LagSup_-LagInf_+1)*Percentage)*(double)((DistanceSup_*Percentage)+1)),((double)IDCounter.size()/ ((double)(((LagSup_-LagInf_)*Percentage)+1)*(double)((DistanceSup_*Percentage)+1)))),
+                      ((double)IDCounter.size()/ ((double)((LagSup_-LagInf_+1)*Percentage)*(double)((DistanceSup_*Percentage)+1)),((double)IDCounter.size()/ ((double)(((LagSup_-LagInf_)*Percentage)+1)*(double)((DistanceSup_*Percentage)+1)*(double)((DistanceSup_*Percentage)+1)*M_PI)))
+                    };
+
+              //cout<<" Percentage, ConnectedPair, Lag, Distance, Count, Entropy "<<endl;
+              writeVector(wrprp,(ofstream&)cout);
+              writeVector(wrprp,PWriter[0]);
+
+            //Percentage<<" "<< <<LagInf_+round((LagSup_-LagInf_)*Percentage)<<" "<<round(DistanceSup_*Percentage)<<endl;
+
+            //PredictionWriter<<IDCounter.size()<<endl;
+
+
+        }//end of percentage
+        SPPropWr.close();
+    }//if percentage
+
+    //HistogramFullConnect
+    if(ModelInf.HistogramPercFlag ){
+
+          cout<<"**Histogram Spatial and Time**"<<endl;
+          cout<<" Percentage, ConnectedPair, Lag_lb, Lag_ub, Distance, Count, Entropy, R2PI  "<<endl;
+            ofstream hisprpwr("HistPredictionProp.csv");
+            hisprpwr<<" Percentage, Fid, ConnectedPairNUM, PairFid, CoorX, CoorY, LgInf, LgSup, Distance"<<endl;
+         for(int p_int=Percentage_init_int;p_int<=Percentage_end;p_int+=Percentage_add_int){
+         double Percentage=((double)p_int/(double)100.0);
+           double opt_lg_lb=round(FullHistogram_Lag.getInverseCDF(Percentage_lowerbound));
+           double opt_lg_ub=FullHistogram_Lag.getInverseCDF(Percentage);
+           double opt_dist =FullHistogram_Distance.getInverseCDF(Percentage);
+           //cout<<"opt lg dist: "<<opt_lg<<" "<<opt_dist<<endl;
+            PredictionFullTree->clearConnection();
+            PredictionFullTree->setParameter(opt_lg_lb,opt_lg_ub ,opt_dist);
+            PredictionFullTree->Connect();
+             //sp prop writer
+                        for(int u=1;u<PredictionFullTree->getDengueCaseSize();u++){
+                            Coordinate tw97pos= PredictionFullTree->getDengueCase(u).getCoordinate();
+
+                            hisprpwr<<std::scientific<<Percentage<<","<<PredictionFullTree->getDengueCase(u).getFid()<<","
+                                    <<PredictionFullTree->getDengueCase(u).forwardingCase.size()<<",";
+                            for(int vlfid:PredictionFullTree->getDengueCase(u).forwardingCase)hisprpwr<<vlfid<<";";
+                            hisprpwr<<",";
+                            hisprpwr<<std::scientific<<tw97pos.X<<","<<tw97pos.Y<<",";
+                            hisprpwr<<opt_lg_lb<<","<<opt_lg_ub<<","<<opt_dist<<",";
+
+                            hisprpwr<<endl;
+                        }
+
+
+
+            //cout<<"ppsz:"<< PredictionFullTree->getAllPair().size()<<endl;
+                    //calculate coverage
+                    set<int>IDCounter;
+                    for(int i=1;i<PredictionFullTree->getDengueCaseSize();i++){
+                        for(int gfid:PredictionFullTree->getDengueCase(i).forwardingCase){
+                        IDCounter.insert(gfid);
+                        }
+                    }
+            //PredictionWriter<<opt_lg<<","<<opt_dist<<","<<IDCounter.size()<<endl;
+             vector<double>  wrprp =
+             {
+                     Percentage,
+                     (double)PredictionFullTree->getAllPair().size(),
+                     opt_lg_lb,
+                     opt_lg_ub,
+                     opt_dist,
+                     (double)IDCounter.size(),
+                     (double)IDCounter.size()/ (double)((opt_lg_ub-opt_lg_lb+1)*(opt_dist+1)) ,
+                     ((double)IDCounter.size()/ (double)((opt_lg_ub-opt_lg_lb+1)*(opt_dist+1)*(opt_dist+1)*M_PI) )
+             };
+
+              //cout<<" Percentage, ConnectedPair, Lag, Distance, Count, Entropy "<<endl;
+              writeVector(wrprp,(ofstream&)cout);
+              writeVector(wrprp,PWriter[1]);
+
+        }//end of hist
+        hisprpwr.close();
+    }//if hist scope
+
+    //SOM Connected
+    if(ModelInf.SOMPercFlag ){
+         cout<<"**Self Organizing Map Connect Spatial and Time**"<<endl;
+         cout<<" Percentage, ConnectedPair, Lag_lb, Lag_ub, Distance, Count, Entropy, R2PI "<<endl;
+            ofstream somprpwr("somPredictionProp.csv");
+            somprpwr<<" Percentage, Fid, ConnectedPairNUM, PairFid, CoorX, CoorY, LgInf, LgSup, Distance"<<endl;
+         for(int p_int=Percentage_init_int;p_int<=Percentage_end;p_int+=Percentage_add_int){
+         double Percentage=((double)p_int/(double)100.0);
+          long double opt_lg=0,opt_dist=0,opt_area_T=0;int cunt_pt=0;
+          long double opt_lg_ub=0,opt_lg_lb=0;
+
+                   vector<vector<double>>BoundSeries;
+                   for(int u=1;u<PredictionFullTree->getDengueCaseSize();u++){
+                    double opt_lg_lc_lb=round(PollingMapLag[u-1].getInverseCDF(Percentage_lowerbound));
+                    double opt_lg_lc_ub=PollingMapLag[u-1].getInverseCDF(Percentage);
+                    double opt_dist_lc=PollingMapDistance[u-1].getInverseCDF(Percentage);
+
+                        BoundSeries.push_back({opt_lg_lc_lb,opt_lg_lc_ub,0.0,opt_dist_lc});
+
+                        Coordinate tw97pos= PredictionFullTree->getDengueCase(u).getCoordinate();
+
+
+
+
+                         cunt_pt++;
+                         opt_lg+=((opt_lg_lc_ub-opt_lg_lc_lb)+1);
+                         opt_lg_ub+=opt_lg_lc_ub;
+                         opt_lg_lb+=opt_lg_lc_lb;
+                         opt_dist+=(opt_dist_lc+1);
+
+                         opt_area_T+=(((opt_dist_lc+1)*(opt_dist_lc+1)*M_PI)*((opt_lg_lc_ub-opt_lg_lc_lb)+1));
+
+                   }
+                   opt_lg/=(float)cunt_pt;opt_dist/=(float)cunt_pt;
+                   opt_lg_ub/=(double)cunt_pt;
+                   opt_lg_lb/=(double)cunt_pt;
+
+                   opt_area_T/=(double)cunt_pt;
+
+            PredictionFullTree->clearConnection();
+
+            ((DynamicFullConnectedDengueTree*)PredictionFullTree)->setBound(BoundSeries);
+            ((DynamicFullConnectedDengueTree*)PredictionFullTree)->Connect();
+            //cout<<"ppsz:"<< PredictionFullTree->getAllPair().size()<<endl;
+                    //calculate coverage
+                    set<int>IDCounter;
+                    for(int i=1;i<PredictionFullTree->getDengueCaseSize();i++){
+                        for(int gfid:PredictionFullTree->getDengueCase(i).forwardingCase){
+                        IDCounter.insert(gfid);
+                        }
+                    }
+            //PredictionWriter<<IDCounter.size()<<endl;
+            //cout<<IDCounter.size()<<endl;
+
+             vector<double>  wrprp ={
+                                     Percentage,
+                                     (double)PredictionFullTree->getAllPair().size(),
+                                     opt_lg_lb,
+                                     opt_lg_ub,
+                                     opt_dist,
+                                     (double)IDCounter.size(),
+                                     ((double)IDCounter.size()/ (double)((opt_lg)*opt_dist) ),
+                                     ((double)IDCounter.size()/opt_area_T)
+                                    };
+
+
+              writeVector(wrprp,(ofstream&)cout);
+              writeVector(wrprp,PWriter[2]);
+
+
+
+              //write reporter f me
+                        for(int u=1;u<PredictionFullTree->getDengueCaseSize();u++)
+                        {
+                        somprpwr<<std::scientific<<Percentage<<","<<PredictionFullTree->getDengueCase(u).getFid()<<","
+                                <<PredictionFullTree->getDengueCase(u).forwardingCase.size()<<",";
+                        for(int vlfid:PredictionFullTree->getDengueCase(u).forwardingCase)somprpwr<<vlfid<<";";
+                        somprpwr<<",";
+                        somprpwr<<std::scientific<<(PredictionFullTree->getDengueCase(u).getCoordinate().X)<<","<<(PredictionFullTree->getDengueCase(u).getCoordinate().Y)<<",";
+                        somprpwr<<BoundSeries[u-1][0]<<","<<BoundSeries[u-1][1]<<","<<BoundSeries[u-1][3]<<",";
+
+                        somprpwr<<endl;
+                        }
+
+
+        }//end of som pred percentage
+        somprpwr.close();//end of som
+    }//if som scope
+
+            for(int w=0;w<PWriter.size();w++){
+                PWriter[w].close();
+            }//PWriter close
+
+}
+
+
+
+
+
+
+
+
+
+for(int i=0;i<som->getXSize();i++){
+     delete []  LagHistgMp[i];
+     delete [] DistHistgMp[i];
+}
+delete [] LagHistgMp;delete [] DistHistgMp;
+
+delete [] PollingMapLag;
+delete [] PollingMapDistance;
+
+
+delete EditSomControl;
+delete som;
+         //Time Processing
+         END_TIME=clock();
+         ofstream RECORDER_TIME("RunTimeRecording.txt");
+         RECORDER_TIME<<"RUNTIME , "<<(float)(END_TIME-START_TIME)/CLOCKS_PER_SEC<<endl;
+         RECORDER_TIME<<"POLLINGTIME , "<<(float)(POLLING_END_TIME-POLLING_START_TIME)/CLOCKS_PER_SEC<<endl;
+         RECORDER_TIME.close();
+//system("pause");
+return 0;
+}
+
+

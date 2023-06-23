@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="DengueModelVerifyBuffer" />
+		<Option pch_mode="2" />
+		<Option compiler="gnu_gcc_64x_complier" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/DengueModelVerify" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gnu_gcc_64_compiler" />
+				<Option projectCompilerOptionsRelation="-1" />
+				<Option projectLinkerOptionsRelation="-1" />
+				<Option projectIncludeDirsRelation="-1" />
+				<Option projectLibDirsRelation="-1" />
+				<Compiler>
+					<Add option="-std=c++17" />
+				</Compiler>
+				<MakeCommands>
+					<Build command="" />
+					<CompileFile command="" />
+					<Clean command="" />
+					<DistClean command="" />
+					<AskRebuildNeeded command="" />
+					<SilentBuild command=" &gt; $(CMD_NULL)" />
+				</MakeCommands>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/DengueModelVerify" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="gnu_gcc_64_compiler" />
+				<Option projectCompilerOptionsRelation="-1" />
+				<Option projectLinkerOptionsRelation="-1" />
+				<Option projectIncludeDirsRelation="-1" />
+				<Option projectLibDirsRelation="-1" />
+				<Compiler>
+					<Add option="-std=c++17" />
+				</Compiler>
+				<MakeCommands>
+					<Build command="" />
+					<CompileFile command="" />
+					<Clean command="" />
+					<DistClean command="" />
+					<AskRebuildNeeded command="" />
+					<SilentBuild command=" &gt; $(CMD_NULL)" />
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+		</Compiler>
+		<Unit filename="../DengueModel/DBSCANDengueTree.cpp" />
+		<Unit filename="../DengueModel/DBSCANDengueTree.hpp" />
+		<Unit filename="../DengueModel/DengueMegaDataController.cpp" />
+		<Unit filename="../DengueModel/DengueMegaDataController.hpp" />
+		<Unit filename="../DengueModel/DengueTreeOutputFile.cpp" />
+		<Unit filename="../DengueModel/DengueTreeOutputFile.hpp" />
+		<Unit filename="../DengueModel/DynamicFullConnectedDengueTree.cpp" />
+		<Unit filename="../DengueModel/DynamicFullConnectedDengueTree.hpp" />
+		<Unit filename="../DengueModel/FullConnectedDengueTree.cpp" />
+		<Unit filename="../DengueModel/FullConnectedDengueTree.hpp" />
+		<Unit filename="../DengueModel/GeoJsonGenerator.cpp" />
+		<Unit filename="../DengueModel/GeoJsonGenerator.hpp" />
+		<Unit filename="../DengueModel/HistogramMap.cpp" />
+		<Unit filename="../DengueModel/HistogramMap.hpp" />
+		<Unit filename="../DengueModel/InterfaceSimplicity.cpp" />
+		<Unit filename="../DengueModel/InterfaceSimplicity.hpp" />
+		<Unit filename="../DengueModel/MCMCDengueTree.cpp" />
+		<Unit filename="../DengueModel/MCMCDengueTree.hpp" />
+		<Unit filename="../DengueModel/NeuronTree.cpp" />
+		<Unit filename="../DengueModel/NeuronTree.hpp" />
+		<Unit filename="../DengueModel/SelfOrganizingMap.cpp" />
+		<Unit filename="../DengueModel/SelfOrganizingMap.hpp" />
+		<Unit filename="../DengueModel/WeatherAggregateController.cpp" />
+		<Unit filename="../DengueModel/WeatherAggregateController.hpp" />
+		<Unit filename="../DengueModel/neuron.cpp" />
+		<Unit filename="../DengueModel/neuron.hpp" />
+		<Unit filename="../DengueResearchLibrary/CoordinateTransmationTWD97.cpp" />
+		<Unit filename="../DengueResearchLibrary/CoordinateTransmationTWD97.hpp" />
+		<Unit filename="../DengueResearchLibrary/MatrixValueTool.cpp" />
+		<Unit filename="../DengueResearchLibrary/MatrixValueTool.hpp" />
+		<Unit filename="../DengueResearchLibrary/SpatialTimeProcessor.cpp" />
+		<Unit filename="../DengueResearchLibrary/SpatialTimeProcessor.hpp" />
+		<Unit filename="../DengueResearchLibrary/readDengueini.cpp" />
+		<Unit filename="../DengueResearchLibrary/readDengueini.hpp" />
+		<Unit filename="../DengueResearchLibrary/standardlizeTool.cpp" />
+		<Unit filename="../DengueResearchLibrary/standardlizeTool.hpp" />
+		<Unit filename="BufferDissolver.cpp" />
+		<Unit filename="BufferDissolver.hpp" />
+		<Unit filename="DayReportTools.cpp" />
+		<Unit filename="DayReportTools.hpp" />
+		<Unit filename="ExtraControlSignal.cpp" />
+		<Unit filename="ExtraControlSignal.hpp" />
+		<Unit filename="PredictionBuffer.cpp" />
+		<Unit filename="PredictionBuffer.hpp" />
+		<Unit filename="SpatioTimeBufferCalculator.cpp" />
+		<Unit filename="SpatioTimeBufferCalculator.hpp" />
+		<Unit filename="icon.rc">
+			<Option compilerVar="WINDRES" />
+		</Unit>
+		<Unit filename="main.cpp" />
+		<Extensions>
+			<lib_finder disable_auto="1" />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>
