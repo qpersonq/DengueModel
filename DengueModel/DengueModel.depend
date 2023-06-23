@@ -1,0 +1,618 @@
+# depslib dependency file v1.0
+1565771459 source:d:\dropbox\template\dengueresearchlibrary\coordinatetransmationtwd97.cpp
+	"CoordinateTransmationTWD97.hpp"
+	"SpatialTimeProcessor.hpp"
+	<iostream>
+	<string>
+	<vector>
+	<cmath>
+	<sstream>
+	"assert.h"
+
+1550038547 d:\dropbox\template\dengueresearchlibrary\coordinatetransmationtwd97.hpp
+	<iostream>
+	<string>
+	<cmath>
+	"SpatialTimeProcessor.hpp"
+
+1565771382 d:\dropbox\template\dengueresearchlibrary\spatialtimeprocessor.hpp
+	<ctime>
+	<string>
+	<vector>
+
+1565618884 source:d:\dropbox\template\dengueresearchlibrary\spatialtimeprocessor.cpp
+	<iostream>
+	<ctime>
+	<sstream>
+	<sstream>
+	<algorithm>
+	<utility>
+	"SpatialTimeProcessor.hpp"
+	"CoordinateTransmationTWD97.hpp"
+
+1574594998 source:d:\dropbox\template\dengueresearchlibrary\standardlizetool.cpp
+	"standardlizeTool.hpp"
+	<iostream>
+	<cmath>
+	<algorithm>
+	<sstream>
+
+1574595043 d:\dropbox\template\dengueresearchlibrary\standardlizetool.hpp
+	<vector>
+	<fstream>
+
+1579947895 source:d:\dropbox\template\denguemodel\dbscandenguetree.cpp
+	<fstream>
+	<sstream>
+	<iostream>
+	<set>
+	<algorithm>
+	<list>
+	"DBSCANDengueTree.hpp"
+	"NeuronTree.hpp"
+
+1580311309 d:\dropbox\template\denguemodel\dbscandenguetree.hpp
+	"NeuronTree.hpp"
+	<utility>
+	<limits>
+
+1579268275 d:\dropbox\template\denguemodel\neurontree.hpp
+	"neuron.hpp"
+	"spatialtimeprocessor.hpp"
+	<ctime>
+	<vector>
+	<iterator>
+	<map>
+
+1565775924 d:\dropbox\template\denguemodel\neuron.hpp
+	<vector>
+
+1550481717 source:d:\dropbox\template\denguemodel\geojsongenerator.cpp
+	<iostream>
+	<vector>
+	<sstream>
+	<map>
+	<iterator>
+	"GeoJsonGenerator.hpp"
+
+1550481589 d:\dropbox\template\denguemodel\geojsongenerator.hpp
+	"SpatialTimeProcessor.hpp"
+	<string>
+	<map>
+
+1579508129 source:d:\dropbox\template\dengueresearchlibrary\matrixvaluetool.cpp
+	"MatrixValueTool.hpp"
+	<sstream>
+	<iostream>
+	<algorithm>
+	<map>
+	<cmath>
+
+1580323063 d:\dropbox\template\dengueresearchlibrary\matrixvaluetool.hpp
+	<vector>
+	<fstream>
+	<algorithm>
+
+1574012374 source:d:\dropbox\template\dengueresearchlibrary\readdengueini.cpp
+	<iostream>
+	<fstream>
+	<sstream>
+	"readDengueini.hpp"
+
+1574012354 d:\dropbox\template\dengueresearchlibrary\readdengueini.hpp
+	<string>
+	<map>
+
+1579268451 source:d:\dropbox\template\denguemodel\mcmcdenguetree.cpp
+	<cmath>
+	<limits>
+	<iostream>
+	<sstream>
+	<queue>
+	"MCMCDengueTree.hpp"
+	"MatrixValueTool.hpp"
+
+1579268451 d:\dropbox\template\denguemodel\mcmcdenguetree.hpp
+	"NeuronTree.hpp"
+
+1565775946 source:d:\dropbox\template\denguemodel\neuron.cpp
+	<iostream>
+	"neuron.hpp"
+
+1579268255 source:d:\dropbox\template\denguemodel\neurontree.cpp
+	"NeuronTree.hpp"
+	<iostream>
+	<assert.h>
+	<sstream>
+	<ctime>
+	<cmath>
+	<vector>
+	<fstream>
+	<queue>
+	<thread>
+	"SpatialTimeProcessor.hpp"
+	"MatrixValueTool.hpp"
+
+1568052228 source:d:\dropbox\template\denguemodel\som.cpp
+	"SOM.h"
+	"ClassesSOM.h"
+	<Eigen/eigen>
+	<iostream>
+	<sstream>
+	<fstream>
+	<string>
+
+1568051950 d:\dropbox\template\denguemodel\som.h
+	<Eigen/eigen>
+	<iostream>
+	<sstream>
+	<fstream>
+	<string>
+	"ClassesSOM.h"
+	<vector>
+
+1565617490 d:\dropbox\template\denguemodel\classessom.h
+	"SOM.h"
+	<iostream>
+	<sstream>
+	<fstream>
+	<string>
+	<vector>
+	<algorithm>
+	<ctime>
+
+1574012874 source:d:\dropbox\template\denguemodel\outputfile.cpp
+	<iostream>
+	<iomanip>
+	"OutputFile.hpp"
+	<fstream>
+	<sstream>
+	<map>
+	<stack>
+	<algorithm>
+	"SpatialTimeProcessor.hpp"
+	"CoordinateTransmationTWD97.hpp"
+	"GeoJsonGenerator.hpp"
+	"MatrixValueTool.hpp"
+
+1565235000 d:\dropbox\template\denguemodel\outputfile.hpp
+	<string>
+	<fstream>
+	"NeuronTree.hpp"
+
+1582521595 source:d:\dropbox\template\denguemodel\main.cpp
+	<iostream>
+	<ctime>
+	<fstream>
+	<string>
+	<sstream>
+	<vector>
+	<algorithm>
+	<utility>
+	<iterator>
+	<thread>
+	<tuple>
+	<iomanip>
+	<set>
+	<cmath>
+	"InterfaceSimplicity.hpp"
+	"DengueMegaDataController.hpp"
+	"SpatialTimeProcessor.hpp"
+	"NeuronTree.hpp"
+	"MCMCDengueTree.hpp"
+	"DBSCANDengueTree.hpp"
+	"HistogramMap.hpp"
+	"MatrixValueTool.hpp"
+	"standardlizeTool.hpp"
+	"SelfOrganizingMap.hpp"
+	"FullConnectedDengueTree.hpp"
+	"DengueTreeOutputFile.hpp"
+	<boost/asio/thread_pool.hpp>
+	<boost/asio/post.hpp>
+
+1574176840 source:d:\dropbox\template\denguemodel\weatheraggregatecontroller.cpp
+	<algorithm>
+	<cmath>
+	<map>
+	"WeatherAggregateController.hpp"
+
+1574176756 d:\dropbox\template\denguemodel\weatheraggregatecontroller.hpp
+	<vector>
+	<string>
+
+1580305421 source:d:\dropbox\template\denguemodel\denguetreeoutputfile.cpp
+	<iostream>
+	<iomanip>
+	"DengueTreeOutputFile.hpp"
+	<fstream>
+	<sstream>
+	<map>
+	<stack>
+	<algorithm>
+	"SpatialTimeProcessor.hpp"
+	"CoordinateTransmationTWD97.hpp"
+	"GeoJsonGenerator.hpp"
+	"MatrixValueTool.hpp"
+
+1580304791 d:\dropbox\template\denguemodel\denguetreeoutputfile.hpp
+	<string>
+	<fstream>
+	"NeuronTree.hpp"
+
+1580442185 source:d:\dropbox\template\denguemodel\denguemegadatacontroller.cpp
+	<algorithm>
+	<sstream>
+	<iostream>
+	"DengueMegaDataController.hpp"
+	"MatrixValueTool.hpp"
+
+1579946561 d:\dropbox\template\denguemodel\denguemegadatacontroller.hpp
+	<string>
+	<vector>
+	<utility>
+	<map>
+	<fstream>
+
+1580401190 source:d:\dropbox\template\denguemodel\selforganizingmap.cpp
+	<iostream>
+	<sstream>
+	<fstream>
+	<string>
+	<vector>
+	<algorithm>
+	<ctime>
+	<limits>
+	<random>
+	<iomanip>
+	<thread>
+	<queue>
+	"MatrixValueTool.hpp"
+	"SelfOrganizingMap.hpp"
+	<boost/asio/thread_pool.hpp>
+	<boost/asio/post.hpp>
+
+1580401101 d:\dropbox\template\denguemodel\selforganizingmap.hpp
+	<vector>
+	<utility>
+
+1574431997 source:d:\dropbox\template\denguemodel\icon.rc
+
+1579587925 source:d:\dropbox\template\denguemodel\fullconnecteddenguetree.cpp
+	<fstream>
+	<sstream>
+	"FullConnectedDengueTree.hpp"
+
+1579584585 d:\dropbox\template\denguemodel\fullconnecteddenguetree.hpp
+	"NeuronTree.hpp"
+
+1582523157 source:d:\dropbox\template\denguemodel\interfacesimplicity.cpp
+	<sstream>
+	<iostream>
+	<algorithm>
+	<random>
+	"InterfaceSimplicity.hpp"
+	"readDengueini.hpp"
+	"MatrixValueTool.hpp"
+	"SpatialTimeProcessor.hpp"
+
+1582616335 d:\dropbox\template\denguemodel\interfacesimplicity.hpp
+	<string>
+	<tuple>
+	<vector>
+	<fstream>
+	<map>
+	"WeatherAggregateController.hpp"
+	"standardlizeTool.hpp"
+	"DengueMegaDataController.hpp"
+	"NeuronTree.hpp"
+
+1579587897 source:d:\dropbox\template\denguemodel\dynamicfullconnecteddenguetree.cpp
+	"DynamicFullConnectedDengueTree.hpp"
+	<iostream>
+
+1579587647 d:\dropbox\template\denguemodel\dynamicfullconnecteddenguetree.hpp
+	"FullConnectedDengueTree.hpp"
+	<vector>
+
+1580201828 source:d:\dropbox\template\denguemodel\histogrammap.cpp
+	"HistogramMap.hpp"
+	<iostream>
+	<limits>
+	"MatrixValueTool.hpp"
+
+1579506656 d:\dropbox\template\denguemodel\histogrammap.hpp
+	<vector>
+	<fstream>
+
+1565771459 source:d:\student\r07228003dmitrii\dengueresource\dengueresearchlibrary\coordinatetransmationtwd97.cpp
+	"CoordinateTransmationTWD97.hpp"
+	"SpatialTimeProcessor.hpp"
+	<iostream>
+	<string>
+	<vector>
+	<cmath>
+	<sstream>
+	"assert.h"
+
+1601205354 d:\student\r07228003dmitrii\dengueresource\dengueresearchlibrary\coordinatetransmationtwd97.hpp
+	<iostream>
+	<string>
+	<cmath>
+	"SpatialTimeProcessor.hpp"
+
+1565771382 d:\student\r07228003dmitrii\dengueresource\dengueresearchlibrary\spatialtimeprocessor.hpp
+	<ctime>
+	<string>
+	<vector>
+
+1579508129 source:d:\student\r07228003dmitrii\dengueresource\dengueresearchlibrary\matrixvaluetool.cpp
+	"MatrixValueTool.hpp"
+	<sstream>
+	<iostream>
+	<algorithm>
+	<map>
+	<cmath>
+
+1580323063 d:\student\r07228003dmitrii\dengueresource\dengueresearchlibrary\matrixvaluetool.hpp
+	<vector>
+	<fstream>
+	<algorithm>
+
+1592062131 source:d:\student\r07228003dmitrii\dengueresource\dengueresearchlibrary\readdengueini.cpp
+	<iostream>
+	<fstream>
+	<sstream>
+	"readDengueini.hpp"
+
+1574012354 d:\student\r07228003dmitrii\dengueresource\dengueresearchlibrary\readdengueini.hpp
+	<string>
+	<map>
+
+1565618884 source:d:\student\r07228003dmitrii\dengueresource\dengueresearchlibrary\spatialtimeprocessor.cpp
+	<iostream>
+	<ctime>
+	<sstream>
+	<sstream>
+	<algorithm>
+	<utility>
+	"SpatialTimeProcessor.hpp"
+	"CoordinateTransmationTWD97.hpp"
+
+1574594998 source:d:\student\r07228003dmitrii\dengueresource\dengueresearchlibrary\standardlizetool.cpp
+	"standardlizeTool.hpp"
+	<iostream>
+	<cmath>
+	<algorithm>
+	<sstream>
+
+1574595043 d:\student\r07228003dmitrii\dengueresource\dengueresearchlibrary\standardlizetool.hpp
+	<vector>
+	<fstream>
+
+1579947895 source:d:\student\r07228003dmitrii\dengueresource\denguemodel\dbscandenguetree.cpp
+	<fstream>
+	<sstream>
+	<iostream>
+	<set>
+	<algorithm>
+	<list>
+	"DBSCANDengueTree.hpp"
+	"NeuronTree.hpp"
+
+1580311309 d:\student\r07228003dmitrii\dengueresource\denguemodel\dbscandenguetree.hpp
+	"NeuronTree.hpp"
+	<utility>
+	<limits>
+
+1579268275 d:\student\r07228003dmitrii\dengueresource\denguemodel\neurontree.hpp
+	"neuron.hpp"
+	"spatialtimeprocessor.hpp"
+	<ctime>
+	<vector>
+	<iterator>
+	<map>
+
+1565775924 d:\student\r07228003dmitrii\dengueresource\denguemodel\neuron.hpp
+	<vector>
+
+1580442185 source:d:\student\r07228003dmitrii\dengueresource\denguemodel\denguemegadatacontroller.cpp
+	<algorithm>
+	<sstream>
+	<iostream>
+	"DengueMegaDataController.hpp"
+	"MatrixValueTool.hpp"
+
+1591849085 d:\student\r07228003dmitrii\dengueresource\denguemodel\denguemegadatacontroller.hpp
+	<string>
+	<vector>
+	<utility>
+	<map>
+	<fstream>
+
+1580305421 source:d:\student\r07228003dmitrii\dengueresource\denguemodel\denguetreeoutputfile.cpp
+	<iostream>
+	<iomanip>
+	"DengueTreeOutputFile.hpp"
+	<fstream>
+	<sstream>
+	<map>
+	<stack>
+	<algorithm>
+	"SpatialTimeProcessor.hpp"
+	"CoordinateTransmationTWD97.hpp"
+	"GeoJsonGenerator.hpp"
+	"MatrixValueTool.hpp"
+
+1580304791 d:\student\r07228003dmitrii\dengueresource\denguemodel\denguetreeoutputfile.hpp
+	<string>
+	<fstream>
+	"NeuronTree.hpp"
+
+1550481589 d:\student\r07228003dmitrii\dengueresource\denguemodel\geojsongenerator.hpp
+	"SpatialTimeProcessor.hpp"
+	<string>
+	<map>
+
+1592060464 source:d:\student\r07228003dmitrii\dengueresource\denguemodel\dynamicfullconnecteddenguetree.cpp
+	"DynamicFullConnectedDengueTree.hpp"
+	<iostream>
+
+1592060456 d:\student\r07228003dmitrii\dengueresource\denguemodel\dynamicfullconnecteddenguetree.hpp
+	"FullConnectedDengueTree.hpp"
+	<vector>
+
+1610896612 d:\student\r07228003dmitrii\dengueresource\denguemodel\fullconnecteddenguetree.hpp
+	"NeuronTree.hpp"
+
+1610897679 source:d:\student\r07228003dmitrii\dengueresource\denguemodel\fullconnecteddenguetree.cpp
+	<fstream>
+	<sstream>
+	"FullConnectedDengueTree.hpp"
+
+1550481717 source:d:\student\r07228003dmitrii\dengueresource\denguemodel\geojsongenerator.cpp
+	<iostream>
+	<vector>
+	<sstream>
+	<map>
+	<iterator>
+	"GeoJsonGenerator.hpp"
+
+1580201828 source:d:\student\r07228003dmitrii\dengueresource\denguemodel\histogrammap.cpp
+	"HistogramMap.hpp"
+	<iostream>
+	<limits>
+	"MatrixValueTool.hpp"
+
+1579506656 d:\student\r07228003dmitrii\dengueresource\denguemodel\histogrammap.hpp
+	<vector>
+	<fstream>
+
+1574431997 source:d:\student\r07228003dmitrii\dengueresource\denguemodel\icon.rc
+
+1611150587 source:d:\student\r07228003dmitrii\dengueresource\denguemodel\interfacesimplicity.cpp
+	<sstream>
+	<iostream>
+	<algorithm>
+	<random>
+	"InterfaceSimplicity.hpp"
+	"readDengueini.hpp"
+	"MatrixValueTool.hpp"
+	"SpatialTimeProcessor.hpp"
+
+1607102395 d:\student\r07228003dmitrii\dengueresource\denguemodel\interfacesimplicity.hpp
+	<string>
+	<tuple>
+	<vector>
+	<fstream>
+	<map>
+	"WeatherAggregateController.hpp"
+	"standardlizeTool.hpp"
+	"DengueMegaDataController.hpp"
+	"NeuronTree.hpp"
+
+1574176756 d:\student\r07228003dmitrii\dengueresource\denguemodel\weatheraggregatecontroller.hpp
+	<vector>
+	<string>
+
+1579268451 source:d:\student\r07228003dmitrii\dengueresource\denguemodel\mcmcdenguetree.cpp
+	<cmath>
+	<limits>
+	<iostream>
+	<sstream>
+	<queue>
+	"MCMCDengueTree.hpp"
+	"MatrixValueTool.hpp"
+
+1579268451 d:\student\r07228003dmitrii\dengueresource\denguemodel\mcmcdenguetree.hpp
+	"NeuronTree.hpp"
+
+1565775946 source:d:\student\r07228003dmitrii\dengueresource\denguemodel\neuron.cpp
+	<iostream>
+	"neuron.hpp"
+
+1579268255 source:d:\student\r07228003dmitrii\dengueresource\denguemodel\neurontree.cpp
+	"NeuronTree.hpp"
+	<iostream>
+	<assert.h>
+	<sstream>
+	<ctime>
+	<cmath>
+	<vector>
+	<fstream>
+	<queue>
+	<thread>
+	"SpatialTimeProcessor.hpp"
+	"MatrixValueTool.hpp"
+
+1611152595 source:d:\student\r07228003dmitrii\dengueresource\denguemodel\selforganizingmap.cpp
+	<iostream>
+	<sstream>
+	<fstream>
+	<string>
+	<vector>
+	<algorithm>
+	<ctime>
+	<limits>
+	<random>
+	<iomanip>
+	<thread>
+	<queue>
+	"MatrixValueTool.hpp"
+	"SelfOrganizingMap.hpp"
+	<boost/asio/thread_pool.hpp>
+	<boost/asio/post.hpp>
+
+1580401101 d:\student\r07228003dmitrii\dengueresource\denguemodel\selforganizingmap.hpp
+	<vector>
+	<utility>
+
+1574176840 source:d:\student\r07228003dmitrii\dengueresource\denguemodel\weatheraggregatecontroller.cpp
+	<algorithm>
+	<cmath>
+	<map>
+	"WeatherAggregateController.hpp"
+
+1611151718 source:d:\student\r07228003dmitrii\dengueresource\denguemodel\main.cpp
+	<iostream>
+	<ctime>
+	<fstream>
+	<string>
+	<sstream>
+	<vector>
+	<algorithm>
+	<utility>
+	<iterator>
+	<thread>
+	<tuple>
+	<iomanip>
+	<set>
+	<cmath>
+	"InterfaceSimplicity.hpp"
+	"DengueMegaDataController.hpp"
+	"SpatialTimeProcessor.hpp"
+	"NeuronTree.hpp"
+	"MCMCDengueTree.hpp"
+	"DBSCANDengueTree.hpp"
+	"HistogramMap.hpp"
+	"MatrixValueTool.hpp"
+	"standardlizeTool.hpp"
+	"SelfOrganizingMap.hpp"
+	"FullConnectedDengueTree.hpp"
+	"DengueTreeOutputFile.hpp"
+	<boost/asio/thread_pool.hpp>
+	<boost/asio/post.hpp>
+
+1608566856 source:d:\student\r07228003dmitrii\dengueresource\denguemodel\histogrammapndimensions.cpp
+	"HistogramMapNDimensions.hpp"
+	<iostream>
+	<algorithm>
+	<iterator>
+	<sstream>
+	<cmath>
+
+1608565696 d:\student\r07228003dmitrii\dengueresource\denguemodel\histogrammapndimensions.hpp
+	<vector>
+	<fstream>
+	<string>
+	<map>
+

@@ -1,0 +1,36 @@
+*** Dengue Transmission Chain Reinforce Learning ***
+CPUProcessorNum 8
+DengueFactorhcsvName D:\Dropbox\StoragedData\BKDengueDataProcess\DengueFactor.hcsv
+EnviromentalUnit 7
+FactorControllerEnable 1
+InputSOMDirectionFlag 0
+InputSOMDistanceFlag 1
+InputSOMLagFlag 1
+InputSOMPositionFlag 1
+LearningRateFinal 0.1
+LearningRateInitial 0.8
+LowerNetworkBoundDengueID 18053 22000
+LowerNetworkEpochNumber 150
+LowerNetworkFactorNumber 2
+LowerNetworkMode dbscan
+LowerNetworkSavedFile LowerNetwork.han
+PredictionBoundDengueID 33785 54167
+RMSECutUnit 10
+SOMAutoSaveBackup 20
+SOMEpochNum 150
+SOMEpochShow 1
+SOMOuterSize 10
+SOMRMSEShow 1
+SOMStandardlizeInformationFile SOMSTDZINF.han
+SOMUpdateShowEvery50k 1
+SelfOrganizingMapFile DengueSOMPOS18053T22000.csv
+SigmaNeighbourhoodFinal 1
+SigmaNeighbouringInitial 3
+TopologyLineFileName DengueTopologyLine.csv
+WeatherAttributeTraceBackDayAndAggregate Temperature 140 MEAN T_Min 140 MIN Precp 140 SUM Ndvi -1 SUM PopDen -1 SUM
+Loading Done! Number of Connected Pair : 16904
+Input Data Title size: 66 Titles : PositionX,PositionY,Distant,Lag,TemperatureMEAN1,TemperatureMEAN2,TemperatureMEAN3,TemperatureMEAN4,TemperatureMEAN5,TemperatureMEAN6,TemperatureMEAN7,TemperatureMEAN8,TemperatureMEAN9,TemperatureMEAN10,TemperatureMEAN11,TemperatureMEAN12,TemperatureMEAN13,TemperatureMEAN14,TemperatureMEAN15,TemperatureMEAN16,TemperatureMEAN17,TemperatureMEAN18,TemperatureMEAN19,TemperatureMEAN20,T_MinMIN1,T_MinMIN2,T_MinMIN3,T_MinMIN4,T_MinMIN5,T_MinMIN6,T_MinMIN7,T_MinMIN8,T_MinMIN9,T_MinMIN10,T_MinMIN11,T_MinMIN12,T_MinMIN13,T_MinMIN14,T_MinMIN15,T_MinMIN16,T_MinMIN17,T_MinMIN18,T_MinMIN19,T_MinMIN20,PrecpSUM1,PrecpSUM2,PrecpSUM3,PrecpSUM4,PrecpSUM5,PrecpSUM6,PrecpSUM7,PrecpSUM8,PrecpSUM9,PrecpSUM10,PrecpSUM11,PrecpSUM12,PrecpSUM13,PrecpSUM14,PrecpSUM15,PrecpSUM16,PrecpSUM17,PrecpSUM18,PrecpSUM19,PrecpSUM20,Ndvi,PopDen,
+
+ **Start Self Organizing Map**
+No Loding ! Open new SOM
+Itr:1

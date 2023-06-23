@@ -1,0 +1,4 @@
+#ifndef icon_rc
+#define icon_rc
+MAINICON ICON "MBCV.ico"
+#endif // icon_rc

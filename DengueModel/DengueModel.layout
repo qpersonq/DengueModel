@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_layout_file>
+	<FileVersion major="1" minor="0" />
+	<ActiveTarget name="Debug" />
+	<File name="..\DengueResearchLibrary\readDengueini.cpp" open="0" top="0" tabpos="4" split="0" active="1" splitpos="0" zoom_1="6" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="483" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="neuron.hpp" open="0" top="0" tabpos="4" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="140" topLine="3" />
+		</Cursor>
+	</File>
+	<File name="..\DengueResearchLibrary\MatrixValueTool.cpp" open="0" top="0" tabpos="5" split="0" active="1" splitpos="0" zoom_1="3" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="2127" topLine="107" />
+		</Cursor>
+	</File>
+	<File name="HistogramMap.hpp" open="0" top="0" tabpos="3" split="0" active="1" splitpos="0" zoom_1="2" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="257" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="icon.rc" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="6" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="58" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="..\DengueResearchLibrary\SpatialTimeProcessor.cpp" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="1307" topLine="45" />
+		</Cursor>
+	</File>
+	<File name="NeuronTree.cpp" open="0" top="0" tabpos="3" split="0" active="1" splitpos="0" zoom_1="5" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="6918" topLine="204" />
+		</Cursor>
+	</File>
+	<File name="NeuronTree.hpp" open="1" top="0" tabpos="6" split="0" active="1" splitpos="0" zoom_1="5" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="1208" topLine="7" />
+		</Cursor>
+	</File>
+	<File name="FullConnectedDengueTree.hpp" open="0" top="0" tabpos="4" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="247" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="DengueMegaDataController.hpp" open="0" top="0" tabpos="2" split="0" active="1" splitpos="0" zoom_1="8" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="460" topLine="15" />
+		</Cursor>
+	</File>
+	<File name="MCMCDengueTree.cpp" open="1" top="0" tabpos="5" split="0" active="1" splitpos="0" zoom_1="1" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="340" topLine="169" />
+		</Cursor>
+	</File>
+	<File name="HistogramMap.cpp" open="0" top="0" tabpos="4" split="0" active="1" splitpos="0" zoom_1="3" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="3109" topLine="96" />
+		</Cursor>
+	</File>
+	<File name="InterfaceSimplicity.hpp" open="0" top="0" tabpos="3" split="0" active="1" splitpos="0" zoom_1="3" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="3242" topLine="100" />
+		</Cursor>
+	</File>
+	<File name="WeatherAggregateController.hpp" open="0" top="0" tabpos="2" split="0" active="1" splitpos="0" zoom_1="7" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="244" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="DynamicFullConnectedDengueTree.hpp" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="573" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="..\DengueResearchLibrary\standardlizeTool.hpp" open="1" top="0" tabpos="12" split="0" active="1" splitpos="0" zoom_1="7" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="394" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="..\DengueResearchLibrary\standardlizeTool.cpp" open="0" top="0" tabpos="6" split="0" active="1" splitpos="0" zoom_1="4" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="1248" topLine="10" />
+		</Cursor>
+	</File>
+	<File name="..\DengueResearchLibrary\MatrixValueTool.hpp" open="1" top="0" tabpos="9" split="0" active="1" splitpos="0" zoom_1="2" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="233" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="..\DengueResearchLibrary\readDengueini.hpp" open="1" top="0" tabpos="10" split="0" active="1" splitpos="0" zoom_1="7" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="121" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="..\DengueResearchLibrary\SpatialTimeProcessor.hpp" open="1" top="0" tabpos="11" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="299" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="neuron.cpp" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="143" topLine="12" />
+		</Cursor>
+	</File>
+	<File name="..\DengueResearchLibrary\CoordinateTransmationTWD97.hpp" open="1" top="0" tabpos="8" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="334" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="DBSCANDengueTree.cpp" open="1" top="0" tabpos="2" split="0" active="1" splitpos="0" zoom_1="2" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="889" topLine="9" />
+		</Cursor>
+	</File>
+	<File name="SelfOrganizingMap.cpp" open="1" top="0" tabpos="4" split="0" active="1" splitpos="0" zoom_1="4" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="19608" topLine="373" />
+		</Cursor>
+	</File>
+	<File name="MCMCDengueTree.hpp" open="1" top="1" tabpos="7" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="125" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="DengueTreeOutputFile.cpp" open="0" top="0" tabpos="4" split="0" active="1" splitpos="0" zoom_1="4" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="2715" topLine="86" />
+		</Cursor>
+	</File>
+	<File name="DynamicFullConnectedDengueTree.cpp" open="0" top="0" tabpos="7" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="314" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="WeatherAggregateController.cpp" open="1" top="0" tabpos="13" split="0" active="1" splitpos="0" zoom_1="8" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="51" topLine="6" />
+		</Cursor>
+	</File>
+	<File name="main.cpp" open="1" top="0" tabpos="1" split="0" active="1" splitpos="0" zoom_1="5" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="11007" topLine="297" />
+		</Cursor>
+	</File>
+	<File name="DBSCANDengueTree.hpp" open="1" top="0" tabpos="3" split="0" active="1" splitpos="0" zoom_1="4" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="343" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="InterfaceSimplicity.cpp" open="0" top="0" tabpos="2" split="0" active="1" splitpos="0" zoom_1="2" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="9835" topLine="209" />
+		</Cursor>
+	</File>
+	<File name="SelfOrganizingMap.hpp" open="0" top="0" tabpos="8" split="0" active="1" splitpos="0" zoom_1="2" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="10019" topLine="257" />
+		</Cursor>
+	</File>
+	<File name="FullConnectedDengueTree.cpp" open="0" top="0" tabpos="8" split="0" active="1" splitpos="0" zoom_1="3" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="2350" topLine="43" />
+		</Cursor>
+	</File>
+	<File name="DengueTreeOutputFile.hpp" open="0" top="0" tabpos="5" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="131" topLine="4" />
+		</Cursor>
+	</File>
+	<File name="DengueMegaDataController.cpp" open="0" top="0" tabpos="4" split="0" active="1" splitpos="0" zoom_1="8" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="19" topLine="0" />
+		</Cursor>
+	</File>
+</CodeBlocks_layout_file>
