@@ -1,0 +1,179 @@
+E:\DengueGoogleMap\DengueGoogleMap\bin\Debug\DengueGoogleMap.exe.config
+E:\DengueGoogleMap\DengueGoogleMap\bin\Debug\DengueGoogleMap.exe
+E:\DengueGoogleMap\DengueGoogleMap\bin\Debug\DengueGoogleMap.pdb
+E:\DengueGoogleMap\DengueGoogleMap\bin\Debug\EntityFramework.dll
+E:\DengueGoogleMap\DengueGoogleMap\bin\Debug\EntityFramework.SqlServer.dll
+E:\DengueGoogleMap\DengueGoogleMap\bin\Debug\GMap.NET.Core.dll
+E:\DengueGoogleMap\DengueGoogleMap\bin\Debug\GMap.NET.WindowsForms.dll
+E:\DengueGoogleMap\DengueGoogleMap\bin\Debug\GMap.NET.WindowsPresentation.dll
+E:\DengueGoogleMap\DengueGoogleMap\bin\Debug\Newtonsoft.Json.dll
+E:\DengueGoogleMap\DengueGoogleMap\bin\Debug\System.Data.SQLite.dll
+E:\DengueGoogleMap\DengueGoogleMap\bin\Debug\System.Data.SQLite.EF6.dll
+E:\DengueGoogleMap\DengueGoogleMap\bin\Debug\System.Data.SQLite.Linq.dll
+E:\DengueGoogleMap\DengueGoogleMap\bin\Debug\EntityFramework.xml
+E:\DengueGoogleMap\DengueGoogleMap\bin\Debug\EntityFramework.SqlServer.xml
+E:\DengueGoogleMap\DengueGoogleMap\bin\Debug\Newtonsoft.Json.xml
+E:\DengueGoogleMap\DengueGoogleMap\bin\Debug\System.Data.SQLite.xml
+E:\DengueGoogleMap\DengueGoogleMap\obj\Debug\DengueGoogleMap.csprojAssemblyReference.cache
+E:\DengueGoogleMap\DengueGoogleMap\obj\Debug\DengueGoogleMap.GoogleMapPresentation.resources
+E:\DengueGoogleMap\DengueGoogleMap\obj\Debug\DengueGoogleMap.Properties.Resources.resources
+E:\DengueGoogleMap\DengueGoogleMap\obj\Debug\DengueGoogleMap.csproj.GenerateResource.cache
+E:\DengueGoogleMap\DengueGoogleMap\obj\Debug\DengueGoogleMap.csproj.CoreCompileInputs.cache
+E:\DengueGoogleMap\DengueGoogleMap\obj\Debug\DengueGoogleMap.csproj.CopyComplete
+E:\DengueGoogleMap\DengueGoogleMap\obj\Debug\DengueGoogleMap.exe
+E:\DengueGoogleMap\DengueGoogleMap\obj\Debug\DengueGoogleMap.pdb
+D:\student\R07228003Dmitrii\NetDisk\backup Mydisk\ProjectBackup\DengueGoogleMap\DengueGoogleMap\bin\Debug\DengueGoogleMap.exe.config
+D:\student\R07228003Dmitrii\NetDisk\backup Mydisk\ProjectBackup\DengueGoogleMap\DengueGoogleMap\bin\Debug\DengueGoogleMap.exe
+D:\student\R07228003Dmitrii\NetDisk\backup Mydisk\ProjectBackup\DengueGoogleMap\DengueGoogleMap\bin\Debug\DengueGoogleMap.pdb
+D:\student\R07228003Dmitrii\NetDisk\backup Mydisk\ProjectBackup\DengueGoogleMap\DengueGoogleMap\bin\Debug\EntityFramework.dll
+D:\student\R07228003Dmitrii\NetDisk\backup Mydisk\ProjectBackup\DengueGoogleMap\DengueGoogleMap\bin\Debug\EntityFramework.SqlServer.dll
+D:\student\R07228003Dmitrii\NetDisk\backup Mydisk\ProjectBackup\DengueGoogleMap\DengueGoogleMap\bin\Debug\GMap.NET.Core.dll
+D:\student\R07228003Dmitrii\NetDisk\backup Mydisk\ProjectBackup\DengueGoogleMap\DengueGoogleMap\bin\Debug\GMap.NET.WindowsForms.dll
+D:\student\R07228003Dmitrii\NetDisk\backup Mydisk\ProjectBackup\DengueGoogleMap\DengueGoogleMap\bin\Debug\GMap.NET.WindowsPresentation.dll
+D:\student\R07228003Dmitrii\NetDisk\backup Mydisk\ProjectBackup\DengueGoogleMap\DengueGoogleMap\bin\Debug\Newtonsoft.Json.dll
+D:\student\R07228003Dmitrii\NetDisk\backup Mydisk\ProjectBackup\DengueGoogleMap\DengueGoogleMap\bin\Debug\System.Data.SQLite.dll
+D:\student\R07228003Dmitrii\NetDisk\backup Mydisk\ProjectBackup\DengueGoogleMap\DengueGoogleMap\bin\Debug\System.Data.SQLite.EF6.dll
+D:\student\R07228003Dmitrii\NetDisk\backup Mydisk\ProjectBackup\DengueGoogleMap\DengueGoogleMap\bin\Debug\System.Data.SQLite.Linq.dll
+D:\student\R07228003Dmitrii\NetDisk\backup Mydisk\ProjectBackup\DengueGoogleMap\DengueGoogleMap\bin\Debug\EntityFramework.xml
+D:\student\R07228003Dmitrii\NetDisk\backup Mydisk\ProjectBackup\DengueGoogleMap\DengueGoogleMap\bin\Debug\EntityFramework.SqlServer.xml
+D:\student\R07228003Dmitrii\NetDisk\backup Mydisk\ProjectBackup\DengueGoogleMap\DengueGoogleMap\bin\Debug\Newtonsoft.Json.xml
+D:\student\R07228003Dmitrii\NetDisk\backup Mydisk\ProjectBackup\DengueGoogleMap\DengueGoogleMap\bin\Debug\System.Data.SQLite.xml
+D:\student\R07228003Dmitrii\NetDisk\backup Mydisk\ProjectBackup\DengueGoogleMap\DengueGoogleMap\bin\Debug\System.Data.SQLite.dll.config
+D:\student\R07228003Dmitrii\NetDisk\backup Mydisk\ProjectBackup\DengueGoogleMap\DengueGoogleMap\obj\Debug\DengueGoogleMap.csprojAssemblyReference.cache
+D:\student\R07228003Dmitrii\NetDisk\backup Mydisk\ProjectBackup\DengueGoogleMap\DengueGoogleMap\obj\Debug\DengueGoogleMap.GoogleMapPresentation.resources
+D:\student\R07228003Dmitrii\NetDisk\backup Mydisk\ProjectBackup\DengueGoogleMap\DengueGoogleMap\obj\Debug\DengueGoogleMap.Properties.Resources.resources
+D:\student\R07228003Dmitrii\NetDisk\backup Mydisk\ProjectBackup\DengueGoogleMap\DengueGoogleMap\obj\Debug\DengueGoogleMap.csproj.GenerateResource.cache
+D:\student\R07228003Dmitrii\NetDisk\backup Mydisk\ProjectBackup\DengueGoogleMap\DengueGoogleMap\obj\Debug\DengueGoogleMap.csproj.CoreCompileInputs.cache
+D:\student\R07228003Dmitrii\NetDisk\backup Mydisk\ProjectBackup\DengueGoogleMap\DengueGoogleMap\obj\Debug\DengueGoogleMap.csproj.CopyComplete
+D:\student\R07228003Dmitrii\NetDisk\backup Mydisk\ProjectBackup\DengueGoogleMap\DengueGoogleMap\obj\Debug\DengueGoogleMap.exe
+D:\student\R07228003Dmitrii\NetDisk\backup Mydisk\ProjectBackup\DengueGoogleMap\DengueGoogleMap\obj\Debug\DengueGoogleMap.pdb
+D:\student\R07228003Dmitrii\DesktopTemplate\DengueGoogleMap\DengueGoogleMap\bin\Debug\DengueGoogleMap.exe.config
+D:\student\R07228003Dmitrii\DesktopTemplate\DengueGoogleMap\DengueGoogleMap\bin\Debug\DengueGoogleMap.exe
+D:\student\R07228003Dmitrii\DesktopTemplate\DengueGoogleMap\DengueGoogleMap\bin\Debug\DengueGoogleMap.pdb
+D:\student\R07228003Dmitrii\DesktopTemplate\DengueGoogleMap\DengueGoogleMap\bin\Debug\EntityFramework.dll
+D:\student\R07228003Dmitrii\DesktopTemplate\DengueGoogleMap\DengueGoogleMap\bin\Debug\EntityFramework.SqlServer.dll
+D:\student\R07228003Dmitrii\DesktopTemplate\DengueGoogleMap\DengueGoogleMap\bin\Debug\GMap.NET.Core.dll
+D:\student\R07228003Dmitrii\DesktopTemplate\DengueGoogleMap\DengueGoogleMap\bin\Debug\GMap.NET.WindowsForms.dll
+D:\student\R07228003Dmitrii\DesktopTemplate\DengueGoogleMap\DengueGoogleMap\bin\Debug\GMap.NET.WindowsPresentation.dll
+D:\student\R07228003Dmitrii\DesktopTemplate\DengueGoogleMap\DengueGoogleMap\bin\Debug\Newtonsoft.Json.dll
+D:\student\R07228003Dmitrii\DesktopTemplate\DengueGoogleMap\DengueGoogleMap\bin\Debug\System.Data.SQLite.dll
+D:\student\R07228003Dmitrii\DesktopTemplate\DengueGoogleMap\DengueGoogleMap\bin\Debug\System.Data.SQLite.EF6.dll
+D:\student\R07228003Dmitrii\DesktopTemplate\DengueGoogleMap\DengueGoogleMap\bin\Debug\System.Data.SQLite.Linq.dll
+D:\student\R07228003Dmitrii\DesktopTemplate\DengueGoogleMap\DengueGoogleMap\bin\Debug\EntityFramework.xml
+D:\student\R07228003Dmitrii\DesktopTemplate\DengueGoogleMap\DengueGoogleMap\bin\Debug\EntityFramework.SqlServer.xml
+D:\student\R07228003Dmitrii\DesktopTemplate\DengueGoogleMap\DengueGoogleMap\bin\Debug\Newtonsoft.Json.xml
+D:\student\R07228003Dmitrii\DesktopTemplate\DengueGoogleMap\DengueGoogleMap\bin\Debug\System.Data.SQLite.xml
+D:\student\R07228003Dmitrii\DesktopTemplate\DengueGoogleMap\DengueGoogleMap\bin\Debug\System.Data.SQLite.dll.config
+D:\student\R07228003Dmitrii\DesktopTemplate\DengueGoogleMap\DengueGoogleMap\obj\Debug\DengueGoogleMap.csprojAssemblyReference.cache
+D:\student\R07228003Dmitrii\DesktopTemplate\DengueGoogleMap\DengueGoogleMap\obj\Debug\DengueGoogleMap.GoogleMapPresentation.resources
+D:\student\R07228003Dmitrii\DesktopTemplate\DengueGoogleMap\DengueGoogleMap\obj\Debug\DengueGoogleMap.Properties.Resources.resources
+D:\student\R07228003Dmitrii\DesktopTemplate\DengueGoogleMap\DengueGoogleMap\obj\Debug\DengueGoogleMap.csproj.GenerateResource.cache
+D:\student\R07228003Dmitrii\DesktopTemplate\DengueGoogleMap\DengueGoogleMap\obj\Debug\DengueGoogleMap.csproj.CoreCompileInputs.cache
+D:\student\R07228003Dmitrii\DesktopTemplate\DengueGoogleMap\DengueGoogleMap\obj\Debug\DengueGoogleMap.csproj.CopyComplete
+D:\student\R07228003Dmitrii\DesktopTemplate\DengueGoogleMap\DengueGoogleMap\obj\Debug\DengueGoogleMap.exe
+D:\student\R07228003Dmitrii\DesktopTemplate\DengueGoogleMap\DengueGoogleMap\obj\Debug\DengueGoogleMap.pdb
+D:\student\R07228003Dmitrii\DengueResource\DengueGoogleMap\DengueGoogleMap\bin\Debug\DengueGoogleMap.exe.config
+D:\student\R07228003Dmitrii\DengueResource\DengueGoogleMap\DengueGoogleMap\bin\Debug\DengueGoogleMap.exe
+D:\student\R07228003Dmitrii\DengueResource\DengueGoogleMap\DengueGoogleMap\bin\Debug\DengueGoogleMap.pdb
+D:\student\R07228003Dmitrii\DengueResource\DengueGoogleMap\DengueGoogleMap\bin\Debug\EntityFramework.dll
+D:\student\R07228003Dmitrii\DengueResource\DengueGoogleMap\DengueGoogleMap\bin\Debug\EntityFramework.SqlServer.dll
+D:\student\R07228003Dmitrii\DengueResource\DengueGoogleMap\DengueGoogleMap\bin\Debug\GMap.NET.Core.dll
+D:\student\R07228003Dmitrii\DengueResource\DengueGoogleMap\DengueGoogleMap\bin\Debug\GMap.NET.WindowsForms.dll
+D:\student\R07228003Dmitrii\DengueResource\DengueGoogleMap\DengueGoogleMap\bin\Debug\GMap.NET.WindowsPresentation.dll
+D:\student\R07228003Dmitrii\DengueResource\DengueGoogleMap\DengueGoogleMap\bin\Debug\Newtonsoft.Json.dll
+D:\student\R07228003Dmitrii\DengueResource\DengueGoogleMap\DengueGoogleMap\bin\Debug\System.Data.SQLite.dll
+D:\student\R07228003Dmitrii\DengueResource\DengueGoogleMap\DengueGoogleMap\bin\Debug\System.Data.SQLite.EF6.dll
+D:\student\R07228003Dmitrii\DengueResource\DengueGoogleMap\DengueGoogleMap\bin\Debug\System.Data.SQLite.Linq.dll
+D:\student\R07228003Dmitrii\DengueResource\DengueGoogleMap\DengueGoogleMap\bin\Debug\EntityFramework.xml
+D:\student\R07228003Dmitrii\DengueResource\DengueGoogleMap\DengueGoogleMap\bin\Debug\EntityFramework.SqlServer.xml
+D:\student\R07228003Dmitrii\DengueResource\DengueGoogleMap\DengueGoogleMap\bin\Debug\Newtonsoft.Json.xml
+D:\student\R07228003Dmitrii\DengueResource\DengueGoogleMap\DengueGoogleMap\bin\Debug\System.Data.SQLite.xml
+D:\student\R07228003Dmitrii\DengueResource\DengueGoogleMap\DengueGoogleMap\obj\Debug\DengueGoogleMap.csprojAssemblyReference.cache
+D:\student\R07228003Dmitrii\DengueResource\DengueGoogleMap\DengueGoogleMap\obj\Debug\DengueGoogleMap.GoogleMapPresentation.resources
+D:\student\R07228003Dmitrii\DengueResource\DengueGoogleMap\DengueGoogleMap\obj\Debug\DengueGoogleMap.Properties.Resources.resources
+D:\student\R07228003Dmitrii\DengueResource\DengueGoogleMap\DengueGoogleMap\obj\Debug\DengueGoogleMap.csproj.GenerateResource.cache
+D:\student\R07228003Dmitrii\DengueResource\DengueGoogleMap\DengueGoogleMap\obj\Debug\DengueGoogleMap.csproj.CoreCompileInputs.cache
+D:\student\R07228003Dmitrii\DengueResource\DengueGoogleMap\DengueGoogleMap\obj\Debug\DengueGoogleMap.csproj.CopyComplete
+D:\student\R07228003Dmitrii\DengueResource\DengueGoogleMap\DengueGoogleMap\obj\Debug\DengueGoogleMap.exe
+D:\student\R07228003Dmitrii\DengueResource\DengueGoogleMap\DengueGoogleMap\obj\Debug\DengueGoogleMap.pdb
+J:\DengueRun\ThreeSoftwaresBkup\DengueGoogleMap\DengueGoogleMap\bin\Debug\DengueGoogleMap.exe.config
+J:\DengueRun\ThreeSoftwaresBkup\DengueGoogleMap\DengueGoogleMap\bin\Debug\DengueGoogleMap.exe
+J:\DengueRun\ThreeSoftwaresBkup\DengueGoogleMap\DengueGoogleMap\bin\Debug\DengueGoogleMap.pdb
+J:\DengueRun\ThreeSoftwaresBkup\DengueGoogleMap\DengueGoogleMap\bin\Debug\EntityFramework.dll
+J:\DengueRun\ThreeSoftwaresBkup\DengueGoogleMap\DengueGoogleMap\bin\Debug\EntityFramework.SqlServer.dll
+J:\DengueRun\ThreeSoftwaresBkup\DengueGoogleMap\DengueGoogleMap\bin\Debug\GMap.NET.Core.dll
+J:\DengueRun\ThreeSoftwaresBkup\DengueGoogleMap\DengueGoogleMap\bin\Debug\GMap.NET.WindowsForms.dll
+J:\DengueRun\ThreeSoftwaresBkup\DengueGoogleMap\DengueGoogleMap\bin\Debug\GMap.NET.WindowsPresentation.dll
+J:\DengueRun\ThreeSoftwaresBkup\DengueGoogleMap\DengueGoogleMap\bin\Debug\Newtonsoft.Json.dll
+J:\DengueRun\ThreeSoftwaresBkup\DengueGoogleMap\DengueGoogleMap\bin\Debug\System.Data.SQLite.dll
+J:\DengueRun\ThreeSoftwaresBkup\DengueGoogleMap\DengueGoogleMap\bin\Debug\System.Data.SQLite.EF6.dll
+J:\DengueRun\ThreeSoftwaresBkup\DengueGoogleMap\DengueGoogleMap\bin\Debug\System.Data.SQLite.Linq.dll
+J:\DengueRun\ThreeSoftwaresBkup\DengueGoogleMap\DengueGoogleMap\bin\Debug\EntityFramework.xml
+J:\DengueRun\ThreeSoftwaresBkup\DengueGoogleMap\DengueGoogleMap\bin\Debug\EntityFramework.SqlServer.xml
+J:\DengueRun\ThreeSoftwaresBkup\DengueGoogleMap\DengueGoogleMap\bin\Debug\Newtonsoft.Json.xml
+J:\DengueRun\ThreeSoftwaresBkup\DengueGoogleMap\DengueGoogleMap\bin\Debug\System.Data.SQLite.xml
+J:\DengueRun\ThreeSoftwaresBkup\DengueGoogleMap\DengueGoogleMap\obj\Debug\DengueGoogleMap.csprojAssemblyReference.cache
+J:\DengueRun\ThreeSoftwaresBkup\DengueGoogleMap\DengueGoogleMap\obj\Debug\DengueGoogleMap.GoogleMapPresentation.resources
+J:\DengueRun\ThreeSoftwaresBkup\DengueGoogleMap\DengueGoogleMap\obj\Debug\DengueGoogleMap.Properties.Resources.resources
+J:\DengueRun\ThreeSoftwaresBkup\DengueGoogleMap\DengueGoogleMap\obj\Debug\DengueGoogleMap.csproj.GenerateResource.cache
+J:\DengueRun\ThreeSoftwaresBkup\DengueGoogleMap\DengueGoogleMap\obj\Debug\DengueGoogleMap.csproj.CoreCompileInputs.cache
+J:\DengueRun\ThreeSoftwaresBkup\DengueGoogleMap\DengueGoogleMap\obj\Debug\DengueGoogleMap.csproj.CopyComplete
+J:\DengueRun\ThreeSoftwaresBkup\DengueGoogleMap\DengueGoogleMap\obj\Debug\DengueGoogleMap.exe
+J:\DengueRun\ThreeSoftwaresBkup\DengueGoogleMap\DengueGoogleMap\obj\Debug\DengueGoogleMap.pdb
+J:\DengueRun\ThreeSoftwaresBkup\DengueGoogleMap\DengueGoogleMap\obj\Debug\DengueGoogleMap.ControlEpidemicPlayer.resources
+D:\student\R07228003Dmitrii\DengueResource\DengueGoogleMap\DengueGoogleMap\obj\Debug\DengueGoogleMap.ControlEpidemicPlayer.resources
+D:\student\R07228003Dmitrii\DengueResource\DengueGoogleMap\DengueGoogleMap\obj\Debug\DengueGoogleMap.RollingResultForm.resources
+E:\DengueGoogleMap\DengueGoogleMap\obj\Debug\DengueGoogleMap.ControlEpidemicPlayer.resources
+E:\DengueGoogleMap\DengueGoogleMap\obj\Debug\DengueGoogleMap.RollingResultForm.resources
+K:\DengueGoogleMap\DengueGoogleMap\bin\Debug\EntityFramework.dll
+K:\DengueGoogleMap\DengueGoogleMap\bin\Debug\EntityFramework.SqlServer.dll
+K:\DengueGoogleMap\DengueGoogleMap\bin\Debug\GMap.NET.Core.dll
+K:\DengueGoogleMap\DengueGoogleMap\bin\Debug\GMap.NET.WindowsForms.dll
+K:\DengueGoogleMap\DengueGoogleMap\bin\Debug\GMap.NET.WindowsPresentation.dll
+K:\DengueGoogleMap\DengueGoogleMap\bin\Debug\Newtonsoft.Json.dll
+K:\DengueGoogleMap\DengueGoogleMap\bin\Debug\System.Data.SQLite.dll
+K:\DengueGoogleMap\DengueGoogleMap\bin\Debug\System.Data.SQLite.EF6.dll
+K:\DengueGoogleMap\DengueGoogleMap\bin\Debug\System.Data.SQLite.Linq.dll
+K:\DengueGoogleMap\DengueGoogleMap\bin\Debug\EntityFramework.xml
+K:\DengueGoogleMap\DengueGoogleMap\bin\Debug\EntityFramework.SqlServer.xml
+K:\DengueGoogleMap\DengueGoogleMap\bin\Debug\Newtonsoft.Json.xml
+K:\DengueGoogleMap\DengueGoogleMap\bin\Debug\System.Data.SQLite.xml
+K:\DengueGoogleMap\DengueGoogleMap\obj\Debug\DengueGoogleMap.csprojAssemblyReference.cache
+K:\DengueGoogleMap\DengueGoogleMap\obj\Debug\DengueGoogleMap.ControlEpidemicPlayer.resources
+K:\DengueGoogleMap\DengueGoogleMap\obj\Debug\DengueGoogleMap.GoogleMapPresentation.resources
+K:\DengueGoogleMap\DengueGoogleMap\obj\Debug\DengueGoogleMap.Properties.Resources.resources
+K:\DengueGoogleMap\DengueGoogleMap\obj\Debug\DengueGoogleMap.RollingResultForm.resources
+K:\DengueGoogleMap\DengueGoogleMap\obj\Debug\DengueGoogleMap.csproj.GenerateResource.cache
+K:\DengueGoogleMap\DengueGoogleMap\obj\Debug\DengueGoogleMap.csproj.CoreCompileInputs.cache
+K:\DengueGoogleMap\DengueGoogleMap\obj\Debug\DengueGoogleMap.csproj.CopyComplete
+K:\DengueGoogleMap\DengueGoogleMap\bin\Debug\DengueGoogleMapVer2.exe.config
+K:\DengueGoogleMap\DengueGoogleMap\bin\Debug\DengueGoogleMapVer2.exe
+K:\DengueGoogleMap\DengueGoogleMap\bin\Debug\DengueGoogleMapVer2.pdb
+K:\DengueGoogleMap\DengueGoogleMap\obj\Debug\DengueGoogleMapVer2.exe
+K:\DengueGoogleMap\DengueGoogleMap\obj\Debug\DengueGoogleMapVer2.pdb
+K:\DengueGoogleMapVer2\DengueGoogleMap\bin\Debug\DengueGoogleMapVer2.exe.config
+K:\DengueGoogleMapVer2\DengueGoogleMap\bin\Debug\DengueGoogleMapVer2.exe
+K:\DengueGoogleMapVer2\DengueGoogleMap\bin\Debug\DengueGoogleMapVer2.pdb
+K:\DengueGoogleMapVer2\DengueGoogleMap\bin\Debug\EntityFramework.dll
+K:\DengueGoogleMapVer2\DengueGoogleMap\bin\Debug\EntityFramework.SqlServer.dll
+K:\DengueGoogleMapVer2\DengueGoogleMap\bin\Debug\GMap.NET.Core.dll
+K:\DengueGoogleMapVer2\DengueGoogleMap\bin\Debug\GMap.NET.WindowsForms.dll
+K:\DengueGoogleMapVer2\DengueGoogleMap\bin\Debug\GMap.NET.WindowsPresentation.dll
+K:\DengueGoogleMapVer2\DengueGoogleMap\bin\Debug\Newtonsoft.Json.dll
+K:\DengueGoogleMapVer2\DengueGoogleMap\bin\Debug\System.Data.SQLite.dll
+K:\DengueGoogleMapVer2\DengueGoogleMap\bin\Debug\System.Data.SQLite.EF6.dll
+K:\DengueGoogleMapVer2\DengueGoogleMap\bin\Debug\System.Data.SQLite.Linq.dll
+K:\DengueGoogleMapVer2\DengueGoogleMap\bin\Debug\EntityFramework.xml
+K:\DengueGoogleMapVer2\DengueGoogleMap\bin\Debug\EntityFramework.SqlServer.xml
+K:\DengueGoogleMapVer2\DengueGoogleMap\bin\Debug\Newtonsoft.Json.xml
+K:\DengueGoogleMapVer2\DengueGoogleMap\bin\Debug\System.Data.SQLite.xml
+K:\DengueGoogleMapVer2\DengueGoogleMap\obj\Debug\DengueGoogleMap.csprojAssemblyReference.cache
+K:\DengueGoogleMapVer2\DengueGoogleMap\obj\Debug\DengueGoogleMap.ControlEpidemicPlayer.resources
+K:\DengueGoogleMapVer2\DengueGoogleMap\obj\Debug\DengueGoogleMap.GoogleMapPresentation.resources
+K:\DengueGoogleMapVer2\DengueGoogleMap\obj\Debug\DengueGoogleMap.Properties.Resources.resources
+K:\DengueGoogleMapVer2\DengueGoogleMap\obj\Debug\DengueGoogleMap.RollingResultForm.resources
+K:\DengueGoogleMapVer2\DengueGoogleMap\obj\Debug\DengueGoogleMap.csproj.GenerateResource.cache
+K:\DengueGoogleMapVer2\DengueGoogleMap\obj\Debug\DengueGoogleMap.csproj.CoreCompileInputs.cache
+K:\DengueGoogleMapVer2\DengueGoogleMap\obj\Debug\DengueGoogleMap.csproj.CopyComplete
+K:\DengueGoogleMapVer2\DengueGoogleMap\obj\Debug\DengueGoogleMapVer2.exe
+K:\DengueGoogleMapVer2\DengueGoogleMap\obj\Debug\DengueGoogleMapVer2.pdb
