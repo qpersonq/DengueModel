@@ -1,0 +1,45 @@
+D:\student\R07228003Dmitrii\DengueResource\DengueCheckInterface\DengueCheckInterface\obj\Debug\DengueCheckInterface.csprojAssemblyReference.cache
+D:\student\R07228003Dmitrii\DengueResource\DengueCheckInterface\DengueCheckInterface\obj\Debug\DengueCheckInterface.Properties.Resources.resources
+D:\student\R07228003Dmitrii\DengueResource\DengueCheckInterface\DengueCheckInterface\obj\Debug\DengueCheckInterface.csproj.GenerateResource.cache
+D:\student\R07228003Dmitrii\DengueResource\DengueCheckInterface\DengueCheckInterface\obj\Debug\DengueCheckInterface.csproj.CoreCompileInputs.cache
+D:\student\R07228003Dmitrii\DengueResource\DengueCheckInterface\DengueCheckInterface\bin\Debug\DengueCheckInterface.exe.config
+D:\student\R07228003Dmitrii\DengueResource\DengueCheckInterface\DengueCheckInterface\bin\Debug\DengueCheckInterface.exe
+D:\student\R07228003Dmitrii\DengueResource\DengueCheckInterface\DengueCheckInterface\bin\Debug\DengueCheckInterface.pdb
+D:\student\R07228003Dmitrii\DengueResource\DengueCheckInterface\DengueCheckInterface\obj\Debug\DengueCheckInterface.exe
+D:\student\R07228003Dmitrii\DengueResource\DengueCheckInterface\DengueCheckInterface\obj\Debug\DengueCheckInterface.pdb
+D:\student\R07228003Dmitrii\DengueResource\DengueCheckInterface\DengueCheckInterface\obj\Debug\DenInterface.GraphLine.resources
+D:\student\R07228003Dmitrii\DengueResource\DengueCheckInterface\DengueCheckInterface\obj\Debug\DenInterface.ChartDrawer.resources
+D:\student\R07228003Dmitrii\DengueResource\DengueCheckInterface\DengueCheckInterface\obj\Debug\DenInterface.InterpolationForm.resources
+D:\student\R07228003Dmitrii\DengueResource\DengueCheckInterface\DengueCheckInterface\obj\Debug\DenInterface.RecorderTablePlus.resources
+D:\student\R07228003Dmitrii\DengueResource\DengueCheckInterface\DengueCheckInterface\obj\Debug\DenInterface.RecordeTable.resources
+J:\DengueRun\ThreeSoftwaresBkup\DengueCheckInterface\DengueCheckInterface\bin\Debug\DengueCheckInterface.exe.config
+J:\DengueRun\ThreeSoftwaresBkup\DengueCheckInterface\DengueCheckInterface\bin\Debug\DengueCheckInterface.exe
+J:\DengueRun\ThreeSoftwaresBkup\DengueCheckInterface\DengueCheckInterface\bin\Debug\DengueCheckInterface.pdb
+J:\DengueRun\ThreeSoftwaresBkup\DengueCheckInterface\DengueCheckInterface\obj\Debug\DengueCheckInterface.csprojAssemblyReference.cache
+J:\DengueRun\ThreeSoftwaresBkup\DengueCheckInterface\DengueCheckInterface\obj\Debug\DenInterface.ChartDrawer.resources
+J:\DengueRun\ThreeSoftwaresBkup\DengueCheckInterface\DengueCheckInterface\obj\Debug\DenInterface.GraphLine.resources
+J:\DengueRun\ThreeSoftwaresBkup\DengueCheckInterface\DengueCheckInterface\obj\Debug\DenInterface.InterpolationForm.resources
+J:\DengueRun\ThreeSoftwaresBkup\DengueCheckInterface\DengueCheckInterface\obj\Debug\DengueCheckInterface.Properties.Resources.resources
+J:\DengueRun\ThreeSoftwaresBkup\DengueCheckInterface\DengueCheckInterface\obj\Debug\DenInterface.RecorderTablePlus.resources
+J:\DengueRun\ThreeSoftwaresBkup\DengueCheckInterface\DengueCheckInterface\obj\Debug\DenInterface.RecordeTable.resources
+J:\DengueRun\ThreeSoftwaresBkup\DengueCheckInterface\DengueCheckInterface\obj\Debug\DengueCheckInterface.csproj.GenerateResource.cache
+J:\DengueRun\ThreeSoftwaresBkup\DengueCheckInterface\DengueCheckInterface\obj\Debug\DengueCheckInterface.csproj.CoreCompileInputs.cache
+J:\DengueRun\ThreeSoftwaresBkup\DengueCheckInterface\DengueCheckInterface\obj\Debug\DengueCheckInterface.exe
+J:\DengueRun\ThreeSoftwaresBkup\DengueCheckInterface\DengueCheckInterface\obj\Debug\DengueCheckInterface.pdb
+J:\DengueRun\ThreeSoftwaresBkup\DengueCheckInterface\DengueCheckInterface\obj\Debug\PatternModify.ChartModify.resources
+D:\student\R07228003Dmitrii\DengueResource\DengueCheckInterface\DengueCheckInterface\obj\Debug\PatternModify.ChartModify.resources
+D:\OneDrive - 國立台灣大學\重要實驗成果備份\重要程式碼\DengueCheckInterface\DengueCheckInterface\bin\Debug\DengueCheckInterface.exe.config
+D:\OneDrive - 國立台灣大學\重要實驗成果備份\重要程式碼\DengueCheckInterface\DengueCheckInterface\bin\Debug\DengueCheckInterface.exe
+D:\OneDrive - 國立台灣大學\重要實驗成果備份\重要程式碼\DengueCheckInterface\DengueCheckInterface\bin\Debug\DengueCheckInterface.pdb
+D:\OneDrive - 國立台灣大學\重要實驗成果備份\重要程式碼\DengueCheckInterface\DengueCheckInterface\obj\Debug\DengueCheckInterface.csprojAssemblyReference.cache
+D:\OneDrive - 國立台灣大學\重要實驗成果備份\重要程式碼\DengueCheckInterface\DengueCheckInterface\obj\Debug\DenInterface.ChartDrawer.resources
+D:\OneDrive - 國立台灣大學\重要實驗成果備份\重要程式碼\DengueCheckInterface\DengueCheckInterface\obj\Debug\PatternModify.ChartModify.resources
+D:\OneDrive - 國立台灣大學\重要實驗成果備份\重要程式碼\DengueCheckInterface\DengueCheckInterface\obj\Debug\DenInterface.GraphLine.resources
+D:\OneDrive - 國立台灣大學\重要實驗成果備份\重要程式碼\DengueCheckInterface\DengueCheckInterface\obj\Debug\DenInterface.InterpolationForm.resources
+D:\OneDrive - 國立台灣大學\重要實驗成果備份\重要程式碼\DengueCheckInterface\DengueCheckInterface\obj\Debug\DengueCheckInterface.Properties.Resources.resources
+D:\OneDrive - 國立台灣大學\重要實驗成果備份\重要程式碼\DengueCheckInterface\DengueCheckInterface\obj\Debug\DenInterface.RecorderTablePlus.resources
+D:\OneDrive - 國立台灣大學\重要實驗成果備份\重要程式碼\DengueCheckInterface\DengueCheckInterface\obj\Debug\DenInterface.RecordeTable.resources
+D:\OneDrive - 國立台灣大學\重要實驗成果備份\重要程式碼\DengueCheckInterface\DengueCheckInterface\obj\Debug\DengueCheckInterface.csproj.GenerateResource.cache
+D:\OneDrive - 國立台灣大學\重要實驗成果備份\重要程式碼\DengueCheckInterface\DengueCheckInterface\obj\Debug\DengueCheckInterface.csproj.CoreCompileInputs.cache
+D:\OneDrive - 國立台灣大學\重要實驗成果備份\重要程式碼\DengueCheckInterface\DengueCheckInterface\obj\Debug\DengueCheckInterface.exe
+D:\OneDrive - 國立台灣大學\重要實驗成果備份\重要程式碼\DengueCheckInterface\DengueCheckInterface\obj\Debug\DengueCheckInterface.pdb
