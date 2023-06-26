@@ -1,0 +1,323 @@
+# depslib dependency file v1.0
+1573492661 source:d:\dropbox\template\denguedataprocessor\arcgisrasterprocessor.cpp
+	"ArcgisRasterProcessor.hpp"
+	<iostream>
+	<fstream>
+	<sstream>
+
+1573491967 d:\dropbox\template\denguedataprocessor\arcgisrasterprocessor.hpp
+	<string>
+	<vector>
+	<fstream>
+
+1573975261 source:d:\dropbox\template\denguedataprocessor\main.cpp
+	<iostream>
+	<ctime>
+	<string>
+	<vector>
+	<algorithm>
+	<thread>
+	<utility>
+	<thread>
+	<sstream>
+	"SpatialTimeProcessor.hpp"
+	"InterfaceTool.hpp"
+	"MatrixValueTool.hpp"
+	"standardlizeTool.hpp"
+	"WeatherFacade.hpp"
+	"ArcgisRasterProcessor.hpp"
+
+1566054038 source:d:\dropbox\template\denguedataprocessor\weatherfacade.cpp
+	<iostream>
+	<fstream>
+	<algorithm>
+	<sstream>
+	<mutex>
+	"WeatherFacade.hpp"
+	"SpatialTimeProcessor.hpp"
+
+1565634551 d:\dropbox\template\denguedataprocessor\weatherfacade.hpp
+	<string>
+	<vector>
+	<map>
+	<fstream>
+	<ctime>
+	<set>
+	"SpatialTimeProcessor.hpp"
+	"CoordinateTransmationTWD97.hpp"
+
+1565771459 source:d:\dropbox\template\dengueresearchlibrary\coordinatetransmationtwd97.cpp
+	"CoordinateTransmationTWD97.hpp"
+	"SpatialTimeProcessor.hpp"
+	<iostream>
+	<string>
+	<vector>
+	<cmath>
+	<sstream>
+	"assert.h"
+
+1550038547 d:\dropbox\template\dengueresearchlibrary\coordinatetransmationtwd97.hpp
+	<iostream>
+	<string>
+	<cmath>
+	"SpatialTimeProcessor.hpp"
+
+1565771382 d:\dropbox\template\dengueresearchlibrary\spatialtimeprocessor.hpp
+	<ctime>
+	<string>
+	<vector>
+
+1573913672 source:d:\dropbox\template\dengueresearchlibrary\matrixvaluetool.cpp
+	"MatrixValueTool.hpp"
+	<sstream>
+	<iostream>
+	<algorithm>
+	<map>
+	<cmath>
+
+1566111011 d:\dropbox\template\dengueresearchlibrary\matrixvaluetool.hpp
+	<vector>
+	<fstream>
+
+1565618884 source:d:\dropbox\template\dengueresearchlibrary\spatialtimeprocessor.cpp
+	<iostream>
+	<ctime>
+	<sstream>
+	<sstream>
+	<algorithm>
+	<utility>
+	"SpatialTimeProcessor.hpp"
+	"CoordinateTransmationTWD97.hpp"
+
+1557555109 source:d:\dropbox\template\dengueresearchlibrary\standardlizetool.cpp
+	"standardlizeTool.hpp"
+	<iostream>
+	<cmath>
+
+1557555110 d:\dropbox\template\dengueresearchlibrary\standardlizetool.hpp
+	<vector>
+
+1573975456 source:d:\dropbox\template\denguedataprocessor\interfacetool.cpp
+	"InterfaceTool.hpp"
+	<sstream>
+	<fstream>
+	<algorithm>
+	<iostream>
+	<future>
+	<thread>
+	"CoordinateTransmationTWD97.hpp"
+	"MatrixValueTool.hpp"
+	"WeatherFacade.hpp"
+
+1573975248 d:\dropbox\template\denguedataprocessor\interfacetool.hpp
+	<string>
+	<vector>
+	<ctime>
+	<map>
+	<utility>
+	<sstream>
+	"SpatialTimeProcessor.hpp"
+	"MatrixValueTool.hpp"
+	"WeatherFacade.hpp"
+
+1573968220 source:d:\dropbox\template\denguedataprocessor\icon.rc
+
+1565771459 source:d:\student\r07228003dmitrii\dengueresource\dengueresearchlibrary\coordinatetransmationtwd97.cpp
+	"CoordinateTransmationTWD97.hpp"
+	"SpatialTimeProcessor.hpp"
+	<iostream>
+	<string>
+	<vector>
+	<cmath>
+	<sstream>
+	"assert.h"
+
+1550038547 d:\student\r07228003dmitrii\dengueresource\dengueresearchlibrary\coordinatetransmationtwd97.hpp
+	<iostream>
+	<string>
+	<cmath>
+	"SpatialTimeProcessor.hpp"
+
+1565771382 d:\student\r07228003dmitrii\dengueresource\dengueresearchlibrary\spatialtimeprocessor.hpp
+	<ctime>
+	<string>
+	<vector>
+
+1579508129 source:d:\student\r07228003dmitrii\dengueresource\dengueresearchlibrary\matrixvaluetool.cpp
+	"MatrixValueTool.hpp"
+	<sstream>
+	<iostream>
+	<algorithm>
+	<map>
+	<cmath>
+
+1580323063 d:\student\r07228003dmitrii\dengueresource\dengueresearchlibrary\matrixvaluetool.hpp
+	<vector>
+	<fstream>
+	<algorithm>
+
+1565618884 source:d:\student\r07228003dmitrii\dengueresource\dengueresearchlibrary\spatialtimeprocessor.cpp
+	<iostream>
+	<ctime>
+	<sstream>
+	<sstream>
+	<algorithm>
+	<utility>
+	"SpatialTimeProcessor.hpp"
+	"CoordinateTransmationTWD97.hpp"
+
+1574594998 source:d:\student\r07228003dmitrii\dengueresource\dengueresearchlibrary\standardlizetool.cpp
+	"standardlizeTool.hpp"
+	<iostream>
+	<cmath>
+	<algorithm>
+	<sstream>
+
+1574595043 d:\student\r07228003dmitrii\dengueresource\dengueresearchlibrary\standardlizetool.hpp
+	<vector>
+	<fstream>
+
+1573492661 source:d:\student\r07228003dmitrii\dengueresource\denguedataprocessor\arcgisrasterprocessor.cpp
+	"ArcgisRasterProcessor.hpp"
+	<iostream>
+	<fstream>
+	<sstream>
+
+1573491967 d:\student\r07228003dmitrii\dengueresource\denguedataprocessor\arcgisrasterprocessor.hpp
+	<string>
+	<vector>
+	<fstream>
+
+1573968220 source:d:\student\r07228003dmitrii\dengueresource\denguedataprocessor\icon.rc
+
+1573975456 source:d:\student\r07228003dmitrii\dengueresource\denguedataprocessor\interfacetool.cpp
+	"InterfaceTool.hpp"
+	<sstream>
+	<fstream>
+	<algorithm>
+	<iostream>
+	<future>
+	<thread>
+	"CoordinateTransmationTWD97.hpp"
+	"MatrixValueTool.hpp"
+	"WeatherFacade.hpp"
+
+1573975248 d:\student\r07228003dmitrii\dengueresource\denguedataprocessor\interfacetool.hpp
+	<string>
+	<vector>
+	<ctime>
+	<map>
+	<utility>
+	<sstream>
+	"SpatialTimeProcessor.hpp"
+	"MatrixValueTool.hpp"
+	"WeatherFacade.hpp"
+
+1565634551 d:\student\r07228003dmitrii\dengueresource\denguedataprocessor\weatherfacade.hpp
+	<string>
+	<vector>
+	<map>
+	<fstream>
+	<ctime>
+	<set>
+	"SpatialTimeProcessor.hpp"
+	"CoordinateTransmationTWD97.hpp"
+
+1573977017 source:d:\student\r07228003dmitrii\dengueresource\denguedataprocessor\main.cpp
+	<iostream>
+	<ctime>
+	<string>
+	<vector>
+	<algorithm>
+	<thread>
+	<utility>
+	<thread>
+	<sstream>
+	"SpatialTimeProcessor.hpp"
+	"InterfaceTool.hpp"
+	"MatrixValueTool.hpp"
+	"standardlizeTool.hpp"
+	"WeatherFacade.hpp"
+	"ArcgisRasterProcessor.hpp"
+
+1566054038 source:d:\student\r07228003dmitrii\dengueresource\denguedataprocessor\weatherfacade.cpp
+	<iostream>
+	<fstream>
+	<algorithm>
+	<sstream>
+	<mutex>
+	"WeatherFacade.hpp"
+	"SpatialTimeProcessor.hpp"
+
+1573492661 source:d:\student\r07228003dmitrii\dengueresource\denguedataprocessorfuturefix\arcgisrasterprocessor.cpp
+	"ArcgisRasterProcessor.hpp"
+	<iostream>
+	<fstream>
+	<sstream>
+
+1573491967 d:\student\r07228003dmitrii\dengueresource\denguedataprocessorfuturefix\arcgisrasterprocessor.hpp
+	<string>
+	<vector>
+	<fstream>
+
+1573968220 source:d:\student\r07228003dmitrii\dengueresource\denguedataprocessorfuturefix\icon.rc
+
+1591769193 source:d:\student\r07228003dmitrii\dengueresource\denguedataprocessorfuturefix\interfacetool.cpp
+	"InterfaceTool.hpp"
+	<sstream>
+	<fstream>
+	<algorithm>
+	<iostream>
+	<future>
+	<thread>
+	"CoordinateTransmationTWD97.hpp"
+	"MatrixValueTool.hpp"
+	"WeatherFacade.hpp"
+
+1573975248 d:\student\r07228003dmitrii\dengueresource\denguedataprocessorfuturefix\interfacetool.hpp
+	<string>
+	<vector>
+	<ctime>
+	<map>
+	<utility>
+	<sstream>
+	"SpatialTimeProcessor.hpp"
+	"MatrixValueTool.hpp"
+	"WeatherFacade.hpp"
+
+1565634551 d:\student\r07228003dmitrii\dengueresource\denguedataprocessorfuturefix\weatherfacade.hpp
+	<string>
+	<vector>
+	<map>
+	<fstream>
+	<ctime>
+	<set>
+	"SpatialTimeProcessor.hpp"
+	"CoordinateTransmationTWD97.hpp"
+
+1566054038 source:d:\student\r07228003dmitrii\dengueresource\denguedataprocessorfuturefix\weatherfacade.cpp
+	<iostream>
+	<fstream>
+	<algorithm>
+	<sstream>
+	<mutex>
+	"WeatherFacade.hpp"
+	"SpatialTimeProcessor.hpp"
+
+1591773691 source:d:\student\r07228003dmitrii\dengueresource\denguedataprocessorfuturefix\main.cpp
+	<iostream>
+	<ctime>
+	<string>
+	<vector>
+	<algorithm>
+	<thread>
+	<utility>
+	<thread>
+	<sstream>
+	"SpatialTimeProcessor.hpp"
+	"InterfaceTool.hpp"
+	"MatrixValueTool.hpp"
+	"standardlizeTool.hpp"
+	"WeatherFacade.hpp"
+	"ArcgisRasterProcessor.hpp"
+

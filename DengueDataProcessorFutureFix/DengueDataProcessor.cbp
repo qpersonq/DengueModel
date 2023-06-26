@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="DengueDataProcessorFutureFix" />
+		<Option pch_mode="2" />
+		<Option compiler="gnu_gcc_64x_complier" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/DengueDataProcessorFutureFix" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gnu_gcc_64x_compiler" />
+				<Option projectCompilerOptionsRelation="-1" />
+				<Option projectLinkerOptionsRelation="-1" />
+				<Option projectIncludeDirsRelation="-1" />
+				<Option projectResourceIncludeDirsRelation="-1" />
+				<Option projectLibDirsRelation="-1" />
+				<MakeCommands>
+					<Build command="" />
+					<CompileFile command="" />
+					<Clean command="" />
+					<DistClean command="" />
+					<AskRebuildNeeded command="" />
+					<SilentBuild command=" &gt; $(CMD_NULL)" />
+				</MakeCommands>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/DengueDataProcessorFutureFix" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="gnu_gcc_64x_compiler" />
+				<Option projectCompilerOptionsRelation="-1" />
+				<Option projectLinkerOptionsRelation="-1" />
+				<Option projectIncludeDirsRelation="-1" />
+				<Option projectLibDirsRelation="-1" />
+				<MakeCommands>
+					<Build command="" />
+					<CompileFile command="" />
+					<Clean command="" />
+					<DistClean command="" />
+					<AskRebuildNeeded command="" />
+					<SilentBuild command=" &gt; $(CMD_NULL)" />
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+		</Compiler>
+		<Unit filename="../DengueResearchLibrary/CoordinateTransmationTWD97.cpp" />
+		<Unit filename="../DengueResearchLibrary/CoordinateTransmationTWD97.hpp" />
+		<Unit filename="../DengueResearchLibrary/MatrixValueTool.cpp" />
+		<Unit filename="../DengueResearchLibrary/MatrixValueTool.hpp" />
+		<Unit filename="../DengueResearchLibrary/SpatialTimeProcessor.cpp" />
+		<Unit filename="../DengueResearchLibrary/SpatialTimeProcessor.hpp" />
+		<Unit filename="../DengueResearchLibrary/standardlizeTool.cpp" />
+		<Unit filename="../DengueResearchLibrary/standardlizeTool.hpp" />
+		<Unit filename="ArcgisRasterProcessor.cpp" />
+		<Unit filename="ArcgisRasterProcessor.hpp" />
+		<Unit filename="InterfaceTool.cpp" />
+		<Unit filename="InterfaceTool.hpp" />
+		<Unit filename="WeatherFacade.cpp" />
+		<Unit filename="WeatherFacade.hpp" />
+		<Unit filename="icon.rc">
+			<Option compilerVar="WINDRES" />
+		</Unit>
+		<Unit filename="main.cpp" />
+		<Extensions>
+			<code_completion />
+			<envvars />
+			<debugger />
+			<lib_finder disable_auto="1" />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>
